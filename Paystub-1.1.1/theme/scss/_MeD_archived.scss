@@ -1,0 +1,162 @@
+	
+/*
+  .paystubnav {
+    padding-top: 0.5em;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    margin-right: 0;
+    // &:focus{
+    // 	box-shadow:0px 0px 0px 2px $MeD_secondary_color_2 inset;
+    // }
+    .col-md-6 {
+      margin: 5px -30px 2px 35px;
+      display: block;
+      padding: 0;
+      width: 50px;
+      #stubback,
+      #stubnext {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: $nav_background;
+        &:hover {
+          background-color: $background-alternate;
+          cursor: pointer;
+        }
+      }
+      .disabled {
+        background-color: $disabled_background !important;
+        opacity: 0.3;
+      }
+
+      #stubnext {
+        background-image: url("../content/medias/images/arrow-down-thin.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &:focus {
+          box-shadow: 0px 0px 0px 2px $MeD_secondary_color_2 inset;
+        }
+      }
+      #stubback {
+        background-image: url("../content/medias/images/arrow-up-thin.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &:focus {
+          box-shadow: 0px 0px 0px 2px $MeD_secondary_color_2 inset;
+        }
+      }
+      #stubnext.disabled {
+        background-image: url("../content/medias/images/arrow-down-disabled.png");
+      }
+      #stubback.disabled {
+        background-image: url("../content/medias/images/arrow-up-disabled.png");
+      }
+      input[type="button"] {
+        border: $button_border 1px solid;
+      }
+    }
+	  
+	 
+  }
+  .arrow_right {
+    position: absolute;
+    right: -40%;
+    top: 12%;
+    display: none;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
+    color: $maincolor1_text;
+    background-color: $arrow_background;
+    font-size: 1.2em;
+    h5 {
+      font-size: 22px;
+    }
+  }
+  .arrow_right::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: -8%;
+    border-top: 2em solid transparent;
+    border-bottom: 2em solid transparent;
+    border-right: 2em solid $arrow_background;
+  }
+
+
+// ******************************************************
+  //  Questionnaire
+  // ******************************************************
+  $questionnaire-feed-text-border: rgba(255, 255, 255, 0.3);
+  $questionnaire-feed-text-border-size: rgba(255, 255, 255, 0.3);
+  .MeD_questionnaire {
+    //color:black;
+
+    .MeD_OneAnswer_question {
+      //background-color:white;
+      margin-top: 40px;
+      padding: 70px;
+      border: none;
+
+      legend {
+        font-size: 1.1em;
+        color: currentColor;
+      }
+
+      label {
+        font-size: 1em;
+        font-weight: normal;
+      }
+      &.maincolor2 {
+        div {
+          background-color: $MeD_main_color_2;
+          color: $maincolor2_text;
+        }
+        &:after {
+          border-bottom-color: $MeD_main_color_2;
+        }
+      }
+      .feedback {
+        margin-top: 30px;
+        //border:1px solid currentColor;
+        padding: 10px;
+        padding-top: 6px;
+
+        &.correct {
+          span {
+            font-weight: bold;
+            color: rgba(150, 255, 165, 1);
+          }
+        }
+
+        &.correct.bgcolor {
+          span {
+            font-weight: bold;
+            color: green;
+          }
+        }
+
+        &.incorrect {
+          span {
+            font-weight: bold;
+            color: rgba(255, 159, 160, 1);
+          }
+        }
+        &.incorrect.bgcolor {
+          span {
+            font-weight: bold;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+*/

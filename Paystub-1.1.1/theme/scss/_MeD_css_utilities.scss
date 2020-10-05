@@ -1,0 +1,132 @@
+/* CSS Document */
+
+
+// ----------------------------- Utilities --------------------------------------------------------
+
+.top-buffer {margin-top:35px; }
+.top-buffer-bigger {margin-top:55px; }
+.bottom-buffer {margin-bottom:15px; }
+.max-width {max-width:100%; }
+.pad-right {padding-right:100px;}
+.biggertext {font-size:1.4em !important;}
+
+.lpad {padding-left:30px;}
+//
+.smallleft-buffer{margin-left:10px;}
+.smallright-buffer{margin-right:10px;}
+.left-buffer {margin-left:35px; }
+.mediumleft-buffer {margin-left:200px; }
+.bigleft-buffer {margin-left:300px; }
+
+.top-and-bottom-buffer{margin-top:90px; margin-bottom:90px;}
+.left-and-right-padding{padding-left:90px; padding-right:90px;}
+.megapadding{padding:60px !important;}
+.bigpadding{padding:50px !important;}
+.mediumpadding{padding:30px !important;}
+.smallpadding{padding:15px !important;}
+.nopadding{padding:0px !important;}
+.no-right-pad{
+	padding-right:0px !important;
+}
+
+.no-left-pad{
+	padding-left:0px !important;
+}
+
+.invisible{
+	display:none;
+}
+
+.allborders{
+	border-right: 0.3px solid black;
+	border-bottom: 0.3px solid black;
+}
+
+.center-block {
+    float: none !important
+}
+
+
+.absolutePos
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+.fakelink
+{
+	color:black;
+	text-decoration: underline;
+}
+.underline
+{
+	text-decoration: underline;
+}
+
+#dynamic_content .arr_left0:after {left:0%;}
+#dynamic_content .arr_left5:after {left:5%;}
+#dynamic_content .arr_left10:after {left:10%;}
+#dynamic_content .arr_left15:after {left:15%;}
+#dynamic_content .arr_left20:after {left:20%;}
+#dynamic_content .arr_left25:after {left:25%;}
+#dynamic_content .arr_left30:after {left:30%;}
+#dynamic_content .arr_left35:after {left:35%;}
+#dynamic_content .arr_left40:after {left:40%;}
+#dynamic_content .arr_left45:after {left:45%;}
+#dynamic_content .arr_left50:after {left:50%;}
+#dynamic_content .arr_left55:after {left:55%;}
+#dynamic_content .arr_left60:after {left:60%;}
+#dynamic_content .arr_left65:after {left:65%;}
+#dynamic_content .arr_left70:after {left:70%;}
+#dynamic_content .arr_left75:after {left:75%;}
+#dynamic_content .arr_left80:after {left:80%;}
+#dynamic_content .arr_left85:after {left:85%;}
+#dynamic_content .arr_left90:after {left:90%;}
+#dynamic_content .arr_left95:after {left:95%;}
+#dynamic_content .arr_left100:after {left:95%;}
+
+#dynamic_content .arr_top0:after {top:0%;}
+#dynamic_content .arr_top5:after {top:5%;}
+#dynamic_content .arr_top10:after {top:10%;}
+#dynamic_content .arr_top11:after {top:11%;}
+#dynamic_content .arr_top12:after {top:12%;}
+#dynamic_content .arr_top15:after {top:15%;}
+#dynamic_content .arr_top16:after {top:16%;}
+#dynamic_content .arr_top17:after {top:17%;}
+#dynamic_content .arr_top18:after {top:18%;}
+#dynamic_content .arr_top20:after {top:20%;}
+#dynamic_content .arr_top25:after {top:25%;}
+#dynamic_content .arr_top30:after {top:30%;}
+#dynamic_content .arr_top35:after {top:35%;}
+#dynamic_content .arr_top40:after {top:40%;}
+#dynamic_content .arr_top45:after {top:45%;}
+#dynamic_content .arr_top50:after {top:50%;}
+#dynamic_content .arr_top55:after {top:55%;}
+#dynamic_content .arr_top60:after {top:60%;}
+#dynamic_content .arr_top65:after {top:65%;}
+#dynamic_content .arr_top70:after {top:70%;}
+#dynamic_content .arr_top75:after {top:75%;}
+#dynamic_content .arr_top76:after {top:76%;}
+#dynamic_content .arr_top77:after {top:77%;}
+#dynamic_content .arr_top78:after {top:78%;}
+#dynamic_content .arr_top79:after {top:79%;}
+#dynamic_content .arr_top80:after {top:80%;}
+#dynamic_content .arr_top81:after {top:81%;}
+#dynamic_content .arr_top82:after {top:82%;}
+#dynamic_content .arr_top83:after {top:83%;}
+#dynamic_content .arr_top84:after {top:84%;}
+#dynamic_content .arr_top85:after {top:85%;}
+#dynamic_content .arr_top86:after {top:86%;}
+#dynamic_content .arr_top87:after {top:87%;}
+#dynamic_content .arr_top88:after {top:88%;}
+#dynamic_content .arr_top90:after {top:90%;}
+#dynamic_content .arr_top90_5:after {top:90.5%;}
+#dynamic_content .arr_top95:after {top:95%;}
+#dynamic_content .arr_top100:after {top:95%;}
+
+
+.fixed-height-debug
+{
+	height:288px;
+}

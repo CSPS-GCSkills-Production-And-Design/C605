@@ -1,0 +1,253 @@
+//---------- MeD custom -------//
+$nocolor: rgba(0, 0, 0, 0);
+$fontFamily: "open sans",
+"Segoe UI",
+"Arial";
+
+//New colors
+$MeD_main_color_2: rgba(47, 127, 150, 1);
+$MeD_secondary_color_2: darken($MeD_main_color_2, 10%);
+$MeD_other_color_2: rgba(34, 30, 32, 0.76);
+$lightcolor2: rgba(47, 127, 150, 1);
+$asidecolor2: rgba(213, 210, 205, 1);
+$MeD_mainbg_color: rgba(255, 255, 255, 1);
+$bodybg: white;
+
+$MeD_main_color_1: lighten($MeD_main_color_2, 20%);
+$MeD_main_color_3: darken($MeD_main_color_2, 20%);
+$MeD_secondary_color_1: lighten($MeD_secondary_color_2, 10%);
+$MeD_secondary_color_3: darken($MeD_secondary_color_2, 20%);
+$MeD_other_color_1: lighten($MeD_other_color_2, 85%);
+$MeD_other_color_3: $MeD_other_color_2;
+$lightcolor1: lighten($lightcolor2, 25%);
+$lightcolor3: darken($lightcolor2, 20%);
+$asidecolor1: lighten($asidecolor2, 20%);
+$asidecolor3: darken($asidecolor2, 20%);
+
+$bannercolor: $lightcolor2;
+$bannerbordercolor: darken($bannercolor, 20%);
+$bannerborderheight: 2px;
+
+$MeD_hud_color: rgba(55, 80, 111, 1);
+$MeD_main_color_4: rgba(47, 125, 145, 1); //added by charles
+
+$objective-circle-1: rgb(136, 123, 7);
+$objective-circle-2: rgb(228, 86, 43);
+$objective-circle-3: rgb(153, 111, 75);
+
+//text colors
+
+$maincolor1_text: black;
+$maincolor2_text: white;
+$maincolor3_text: white;
+$bannercolor_text: white;
+
+$secondcolor1_text: black;
+$secondcolor2_text: white;
+$secondcolor3_text: white;
+
+$othercolor1_text: black;
+$othercolor2_text: white;
+$othercolor3_text: white;
+
+$lightcolor1_text: black;
+$lightcolor2_text: white;
+$lightcolor3_text: black;
+
+$asidecolor1_text: black;
+$asidecolor2_text: black;
+$asidecolor3_text: black;
+
+$hudcolor_text: white;
+$bgcolor_text: black;
+$hyperlink_text: blue;
+
+$background: rgb(255, 255, 255);
+$background_alternate: rgba(255, 255, 255, 1);
+$background_edges: rgb(190, 190, 190);
+$background_course: rgb(186, 186, 186);
+
+//white
+
+//Paystubs
+$greyed_out_text: rgba(102, 102, 102, 1);
+$paystub_outline: rgba(255, 255, 255, 0.4);
+$paystub_edges: black;
+$highlight_outline: #4bacc6;
+$highlight: #acd9e5;
+$nav_background: rgba(249, 248, 249, 0.76);
+$disabled_background: rgba(34, 30, 32, 0.76);
+$arrow_background: #d5d2cd;
+$button_border: rgb(175, 175, 175);
+
+//---------- ESDC icon sections -------- //
+
+$information_bg: rgb(217, 244, 247);
+$information_border: rgb(0, 180, 201);
+$nice_to_know_bg: rgb(250, 198, 188);
+$nice_to_know_border: rgb(238, 66, 35);
+$take_note_bg: rgb(249, 208, 210);
+$take_note_border: rgb(238, 66, 35);
+$legislation_bg: rgb(194, 239, 210);
+$legislation_border: rgb(26, 100, 51);
+
+
+
+
+
+
+
+//---------- Global -----------//
+$error-color: #904136;
+$warning-color: #ff851b;
+$base-text-color: rgb(68, 68, 68);
+$link-color: #295376;
+$link-color-visited: #7834bc;
+$box-shadox-color: #999;
+
+$button-default-color: rgba(47, 127, 150, 1);
+$button-default-color-hover: #fff;
+$button-default-background-color: #fff;
+$button-default-background-color-hover: #4f4f4f;
+$button-default-border-color: rgba(47, 127, 150, 1);
+$button-default-border-color-hover: #bbbfc5;
+
+$box-shadow-color: #2f2f2f;
+$spinner-overlay-background-color: rgba(0, 0, 0, 0);
+
+//---------- Layout ----------//
+
+//Footer
+$footer-container-background-color: $nocolor;
+
+$footer-button-color: white;
+$footer-button-background-color: $MeD_secondary_color_2;
+
+$footer-button-color-hover: white;
+$footer-button-background-color-hover: $MeD_secondary_color_3;
+
+$footer-button-color-disabled: rgb(202, 202, 202);
+$footer-button-background-color-disabled: rgb(48, 111, 131);
+
+$footer-button-border-color: $nocolor;
+
+$footer-text-color: $base-text-color;
+$footer-page-of-text-color: $base-text-color;
+$footer-page-of-text-color-mobile: $base-text-color;
+
+$footer-button-color-mobile: white;
+$footer-mobile-button-background-color: $MeD_secondary_color_2;
+
+//Header
+$header-background-color: #555;
+$header-text-color: #444;
+$header-banner-title-color: #555;
+$header-module-name-color: #555;
+$header-button-background-color: transparent;
+$header-button-color-hover: #fff;
+$header-button-background-color-hover: rgba(0,0,0,0); //color of the background behind buttons on top bar
+$header-button-color: $base-text-color;
+//Top Navigation
+$top-nav-text-color: $base-text-color;
+$top-nav-button-color: $base-text-color;
+//mobile only
+$top-nav-button-color-mobile: #fff;
+$top-nav-button-background-color: #777;
+$hamburger-menu-color-mobile: #fff;
+
+//Toolbar
+$toolbox-link-color: $base-text-color;
+$toolbox-link-background-color: #fff;
+$toolbox-link-color-hover: #fff;
+$toolbox-link-background-color-hover: #6e6e6e;
+
+//Supermenu
+$supermenu-button-color: #212121;
+$supermenu-button-background-color: $background;
+$supermenu-button-color-hover: #131313;
+$supermenu-button-background-color-hover: $background;
+$supermenu-dropdown-button-color: $base-text-color;
+$supermenu-dropdown-border-color: $background_edges;
+$supermenu-dropdown-button-background-color: #fff;
+$supermenu-dropdown-button-color-hover: #fff;
+$supermenu-dropdown-button-background-color-hover: #6e6e6e;
+//mobile only
+$supermenu-link-color: #555;
+//icons
+$supermenu-dropdown-icons-color: #777;
+$supermenu-dropdown-icons-color-hover: #fff;
+
+//Scrollbar
+$scrollbar-track-background-color: #fff;
+$scrollbar-thumb-background-color: rgb(245, 249, 241);
+
+//---------- Widgets ----------//
+
+//Collapsible Box
+$collapsibleBox-background-color: #fafafa;
+$collapsibleBox-border-color: #aaa;
+$collapsibleBox-border-bottom-color: #666;
+$collapsibleBox-handle-color: #222;
+
+//Modal
+$modal-header-color: #fff;
+$modal-header-background-color: #555;
+$modal-body-background-color: #fff;
+
+//Zoom
+$zoomin-focus-outline: #a6c8ff;
+
+//Tutorial
+$tutorial-background-color: rgba(0, 0, 0, 0.8);
+//Mouse-scroll
+$tutorial-mouse-container-background-color: #171717;
+$tutorial-mouse-background-color: #d7e059;
+$tutorial-mouse-cable-border-color: #d7e059;
+$tutorial-mouse-spacer-h-border-color: black;
+$tutorial-mouse-spacer-v-border-color: black;
+$tutorial-mouse-wheel-background-color: #111;
+
+//Cards
+$card-background-color: transparent;
+$card-background-color-hover: #d7e059;
+$card-border-color: #d7e059;
+$card-text-color: #d7e059;
+$card-text-color-hover: #3f4040;
+
+//---------- Modules ----------//
+
+//Progress-bar
+$progressBar-color: grey;
+$progressBar-border-color: grey;
+
+//Admin Mode
+$adminMode-background-color: white;
+$adminMode-border-color: #e1e1e1;
+
+//Favorites
+$favorites-background-color: #f9f9f9;
+$favorites-icon-color: #e6ddb7;
+$favorites-icon-shadow-color: #333;
+$favorites-icon-color-hover: #efce4a;
+$favorites-icon-color-focus: #295376;
+$favorites-icon-fav-added-color: #efce4a;
+
+//Sitemap
+$sitemap-link-background-color: #f1f1f1;
+$sitemap-checkmark-color: #fff;
+$sitemap-checkmark-background-color: #3b3b3b;
+
+//---------- Micro-learning ----------//
+
+$micro-body-background-color: #2f2f2f;
+$micro-footer-arrows-color: #d7df58;
+$micro-mobile-footer-arrows-color: #d7df58;
+$micro-module-info-button-color: #d7e059;
+$micro-vertical-spacers-lines-border-color: #d7e059;
+$micro-mobile-edges-background-color: #222;
+$micro-mobile-course-title-color: #d7df58;
+
+//Micro-menu
+$micro-menu-toc-marker-background-color: #111;
+$micro-menu-mobile-bullet-list-item-border-color: #d7e059;
+$micro-menu-mobile-bullet-list-item-border-color-active: #d7e059;

@@ -1,0 +1,198 @@
+// ****
+//SPECIAL BOXES
+
+.MeD_call_out {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: $background_alternate;
+}
+
+@mixin specialBlock($filename) {
+	color: rgb(34, 34, 34);
+	padding-left: 70px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	$url: "../theme/base/#{$filename}";
+	background: url($url) no-repeat 0 0/100% auto;
+	background-size: 40px auto;
+	background-position: 13px 28px;
+}
+
+.MeD_note_cyan {
+	@include specialBlock("Information mini.png");
+	border-left: 3px solid $MeD_main_color_2;
+	background-color: $MeD_main_color_1;
+	a {
+		color: $maincolor1_text !important;
+	}
+	p:last-of-type {
+		margin-bottom: 3px;
+	}
+}
+
+.MeD_note_orange {
+	@include specialBlock("Nice to Know mini ORANGE.png");
+	border-left: 3px solid $MeD_secondary_color_3;
+	background-color: $MeD_secondary_color_2;
+	color: $maincolor2_text;
+}
+
+.MeD_note_orange p:last-of-type {
+	margin-bottom: 3px;
+}
+
+.paddingBox {
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+@mixin specialBlock2($filename) {
+	padding-left: 70px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	$url: "../theme/base/#{$filename}";
+	background: url($url) no-repeat 0 0/100% auto;
+	background-size: 40px auto;
+	background-position: 13px 28px;
+}
+
+.lightbulb {
+	@include specialBlock2("lightbulb.png");
+	border-left: 3px solid white;
+}
+
+.lightbulb p:last-of-type {
+	margin-bottom: 3px;
+}
+
+.orangebox {
+	background-color: $MeD_secondary_color_1;
+	border: 3px solid $MeD_secondary_color_3;
+	color: black;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 30px;
+}
+
+// ******************************************************
+//  Arrow Boxes
+// ******************************************************
+
+$arrowbox_padding: 20px;
+$arrowSize: 25px;
+//creates a top or left arrow. should be expanded to include right and bottom.
+@mixin buildArrow($type, $color) {
+	@if $type == top {
+		bottom: 100%;
+		left: 50%;
+		margin-left: -1 * $arrowSize;
+	}
+
+	@if $type == left {
+		right: 100%;
+		top: 50%;
+		margin-top: -1 * $arrowSize;
+	}
+
+	@if $type == right {
+		left: 100%;
+		top: 50%;
+		margin-top: -1 * $arrowSize;
+	}
+
+	@if $type == bottom {
+		top: 50%;
+		left: 100%;
+		margin-left: -1 * $arrowSize;
+	}
+
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+
+	border-color: $color;
+	border-width: $arrowSize;
+}
+
+.MeD_arrowBox_top {
+	margin-top: $arrowSize - 0px;
+
+	div {
+		padding: $arrowbox_padding;
+		background: red;
+	}
+
+	p:last-of-type {
+		margin-bottom: 0px;
+	}
+
+	&:after {
+		@include buildArrow(top, $nocolor);
+	}
+}
+
+.MeD_arrowBox_left {
+	margin-left: $arrowSize - 12px;
+
+	div {
+		background: red;
+		padding: $arrowbox_padding;
+	}
+
+	h1 {
+		//color:black !important;
+		border-bottom: 1px solid black;
+		padding-bottom: 15px !important;
+		margin-bottom: 9px !important;
+		margin-top: -6px !important;
+	}
+
+	p:last-of-type {
+		margin-bottom: 0px;
+	}
+
+	&:after {
+		@include buildArrow(left, $nocolor);
+	}
+}
+
+.MeD_arrowBox_right {
+	margin-right: -1 * ($arrowSize - 9px);
+
+	div {
+		background: red;
+		padding: $arrowbox_padding;
+	}
+
+	h1 {
+		//color:black !important;
+		border-bottom: 1px solid black;
+		padding-bottom: 15px !important;
+		margin-bottom: 9px !important;
+		margin-top: -6px !important;
+	}
+
+	p:last-of-type {
+		margin-bottom: 0px;
+	}
+
+	&:after {
+		@include buildArrow(right, $nocolor);
+	}
+}
+
+.trangleDown {
+	width: 400px;
+	height: 400px;
+	background-color: red;
+	@include buildArrow(bottom, $MeD_main_color_2);
+}
+
+

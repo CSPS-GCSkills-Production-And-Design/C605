@@ -1,0 +1,110 @@
+// ******************************************************
+//  Paystub
+// ******************************************************
+
+$paystub-nav-button-size: 50px;
+
+// Full page paystub
+.fakelink {
+	color: $maincolor1_text;
+	text-decoration: underline;
+}
+.invert.row {
+	background-color: $paystub_edges;
+	color: $secondcolor2_text;
+}
+.normalpaystub {
+	figure {
+		color: $maincolor1_text;
+		font-size: 0.7em;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 3em;
+		background-color: $background_alternate;
+		border: 2px solid $paystub_edges;
+		padding: 2px 0;
+		.fakelink {
+			color: $greyed_out_text;
+		}
+		.row {
+			border-bottom: 0.3px solid $paystub_edges;
+			width: 100%;
+			padding: 5px 10px;
+			margin-left: auto;
+			margin-right: auto;
+			&:nth-last-of-type(1) {
+				border-bottom: none;
+			}
+		}
+	}
+	.no_underline {
+		.row {
+			border-bottom: none !important;
+		}
+	}
+}
+
+.paystubimg {
+	width: 100%;
+}
+
+.paystubrow {
+	width: 100%;
+	padding: 8px;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #fff;
+	box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+	outline: 3px solid $highlight_outline;
+}
+
+.paystub {
+	.row {
+		background-color: rgba(213, 210, 205, 1);
+		padding: 0 5px;
+		&:nth-of-type(1) {
+			padding-top: 5px;
+		}
+		&:nth-last-child(1) {
+			padding-bottom: 5px;
+		}
+	}
+	.col-sm-8 {
+		background-color: $background_alternate;
+		border-bottom: 0.3px solid $paystub_edges;
+		padding: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+	.invert {
+		background-color: #929292;
+		color: $secondcolor1_text;
+	}
+
+	figure {
+		font-size: 0.7em;
+		color: $greyed_out_text;
+		.fakelink {
+			color: $greyed_out_text;
+		}
+	}
+	figcaption {
+		color: $maincolor1_text;
+		font-size: 0.8em;
+		height: 2em;
+		margin-top: 1em;
+	}
+}
+.highlight {
+	color: $maincolor1_text !important;
+	background-color: $highlight !important;
+	outline: 3px solid $highlight_outline !important;
+	.fakelink {
+		color: $maincolor1_text !important;
+	}
+}
+
+.paystub-table {
+	
+}

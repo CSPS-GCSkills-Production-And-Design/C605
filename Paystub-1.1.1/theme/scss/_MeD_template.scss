@@ -1,0 +1,215 @@
+// **********************************************************
+//
+//	HTML ELEMENTS STYLES
+//
+// ***********************************************************
+
+$wb-bar-height: 45px;
+$wb-sm-height: 42px;
+
+html {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: $fontFamily;
+	background-image: url("../content/medias/images/setction0_bg.png");
+	background-size: cover;
+	background-position: 0px calc(#{$wb-bar-height} + #{$wb-sm-height});
+	background-attachment: fixed;
+	background-color: $bodybg;
+	background-repeat: no-repeat;
+}
+
+// ******************************************************
+// 	TOP BAR
+// ******************************************************
+
+#wb-tphp {
+	left: -200px;
+}
+
+#wb-bar {
+	z-index: 1000;
+	background-color: $background_alternate;
+	height: $wb-bar-height;
+	position: fixed;
+	width: 100%;
+
+	.top-menu {
+		background-color: $background_alternate;
+		padding: 0px;
+		padding-right: 10px;
+	}
+
+	//.lang{
+	//	background-color:red;
+	//}
+
+	.canadaLogo {
+		height: calc(#{$wb-bar-height} - 5px);
+		width: auto;
+		margin-left: -4px;
+	}
+}
+
+// ******************************************************
+// 	TITLE BAR
+// 	Shows course title and sub title on every page (hidden in this template)
+// ******************************************************
+#wb-sttl {
+	display: none;
+}
+
+// ******************************************************
+// 	BREADCRUMB/SUPERMENU BAR
+// ******************************************************
+header {
+	#wb-sm {
+		z-index: 999;
+		border-top: 1px solid $background_edges;
+		border-bottom: 1px solid $background_edges;
+		height: $wb-sm-height;
+		position: fixed;
+		width: 100%;
+		top: $wb-bar-height;
+		background-color: $background;
+
+		$backnext_text_color: $lightcolor3;
+
+		.pnl-strt .backnext {
+			margin: 0px;
+			font-size: 16px;
+		}
+
+		.next:after {
+			border-left-color: $backnext_text_color;
+			display: block;
+		}
+
+		.back:before {
+			border-right-color: $backnext_text_color;
+			display: block;
+		}
+
+		.supermenu > li > a.item {
+			padding: 0px 30px 0px 0px;
+			border: none;
+		}
+
+		//fix for breadcrumb breaking when using certain symbols in titles
+		.sm.list-unstyled.open {
+			min-height: 1000px !important;
+		}
+	}
+}
+
+// ******************************************************
+// 	BOTTOM CONTROL BAR
+// ******************************************************
+#wb-info {
+	background-color: $bannercolor;
+	background-image: url("../content/medias/images/TileBackground.png");
+	background-size: 25%;
+	background-repeat: repeat;
+	height: 85px;
+	padding-top: 20px;
+	margin-top: 0px;
+	border-top:$bannerborderheight solid $bannerbordercolor;
+
+	a:active {
+		background-color: $MeD_secondary_color_2;
+	}
+
+	.backnext {
+		text-align: center;
+		font-size: 1.6em;
+		font-weight: 400;
+	}
+
+	.back, .next
+	{
+		border-radius: 25px;
+		border: 1.5px solid white;
+	}
+	
+	.back {
+		&:before {
+			border: none;
+		}
+	}
+	
+	.next {
+		margin-left: 19px;
+		&:after {
+			border: none;
+		}
+	}	
+
+	.back.disabled, .next.disabled {
+		background-color: $footer-button-background-color-disabled;
+		color: $footer-button-color-disabled;
+		border-color: $footer-button-background-color-disabled;
+	}
+
+	.back.disabled:before {
+		border-right-color: white !important;
+	}
+
+	.next.disabled:after {
+		border-right-color: white !important;
+	}
+}
+
+// **********************************************************
+//
+//	MAIN CONTENT AREA
+//
+// ***********************************************************
+
+main {
+	z-index: 0;
+	padding-top: calc(#{$wb-bar-height} + #{$wb-sm-height});
+	background-color: rgba(230, 230, 230, 0);
+}
+
+// ******************************************************
+// 	TEXT STYLES
+// ******************************************************
+#dynamic_content {
+	font-size: 1.3em;
+	font-weight: normal;
+	p {
+		margin-bottom: 25px;
+	}
+
+	h1,	h2,	h3,	h4,	h5,	h6 {
+		margin-top: 0px;
+		margin-bottom: 25px;
+	}
+
+	ul {
+		margin: 2em 1em;
+		padding: 0;
+		height: 100%;
+	}
+
+	li {
+		margin-bottom: 20px;
+	}
+
+	.bold {
+		font-weight: bold;
+	}
+
+	.bolditalic {
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	.container.loaded .spinner {
+		background-color: red;
+		left: -90000px;
+	}
+}

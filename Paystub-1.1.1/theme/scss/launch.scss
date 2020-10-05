@@ -1,0 +1,79 @@
+@import "./_vars";
+
+html{
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	font-family: $fontFamily;	
+	background-image: url("../content/medias/images/setction0_bg.png");
+	background-size: cover;
+	background-attachment:fixed;
+	background-color:$bodybg;
+	background-repeat:no-repeat;
+}
+
+.container.loaded .spinner{background-color:red; left:-90000px;} 
+
+@media only screen and (min-width : 1000px) {
+
+    .container { width: 1000px; } 
+
+}
+
+#splash-content
+{
+	margin-top:auto;
+	margin-bottom:auto;
+	padding-top: 50px;
+	padding-bottom: 70px;
+	background-color:$bannercolor;
+	background-image:url("../content/medias/images/TileBackground.png");	
+	background-size:25%;
+	background-repeat:repeat;
+
+	h1{
+		color:white;
+		font-size:2.2em;
+		color:$bannercolor_text;
+		margin-bottom:0px;
+		margin-top:15px;
+	}
+	h2{
+		margin-top:25px;
+		color:white;
+	}
+	
+	#launch-btn{
+		margin-top:70px;
+		//border:2px solid black;
+		position:relative;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		width:150px;
+		height:40px;
+		
+		border-radius:50px;
+		background-color:$MeD_secondary_color_2;
+		
+		&:link, &:hover, &:active, &:visited
+		{
+			color:white;
+			font-size:1.6em;
+			font-weight: bold;
+			text-decoration:none;
+		}
+	}
+		
+	.container{
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.alignCenter
+	{
+		text-align:center;
+	}
+}

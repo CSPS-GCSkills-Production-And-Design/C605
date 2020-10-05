@@ -1,0 +1,148 @@
+/* CSS Document */
+
+
+// ************************************* ============================== **********************************
+//
+//                                    lets you apply colors to any object
+//
+// ************************************* ============================== **********************************
+$nobackground: rgba(0, 0, 0, 0);
+$lightLinkColor: white;
+
+%lightlinks {
+	a {
+		&:link {
+			color: $lightLinkColor;
+			text-decoration: underline;
+		}
+
+		&:active {
+			color: $lightLinkColor;
+			text-decoration: underline;
+		}
+
+		&:hover {
+			color: $lightLinkColor;
+			text-decoration: underline;
+		}
+
+		&:visited {
+			color: $lightLinkColor;
+			text-decoration: underline;
+		}
+	}
+}
+
+%darklinks {
+	a {
+		&:link {
+			color: blue;
+		}
+
+		&:active {
+			color: blue;
+		}
+
+		&:hover {
+			color: blue;
+		}
+	}
+}
+
+#dynamic_content {
+	
+	.bgcolor {
+		background-color: $MeD_mainbg_color;
+		color: $bgcolor_text;
+		@extend %darklinks;
+
+		h1,h2 {
+			font-size: 1.4em;
+			padding: 12px;
+			color: white;
+			background-color: $MeD_main_color_2;
+			margin-bottom: 25px;
+			display: inline-block;	
+		}
+
+		h3,h4,h5,h6 {
+			font-size: 1.2em;
+		}
+	}
+
+	.maincolor {
+		background-color: $MeD_main_color_2;
+		color: $maincolor2_text;
+		@extend %lightlinks;
+		
+		h1,h2,h3 {
+			font-size: 1.4em;
+			padding: 12px;
+			color: white;
+			background-color: $MeD_secondary_color_2;
+			margin-bottom: 25px;
+			display: inline-block;	
+		}
+		
+		h4, h5, h6{
+			font-size:1.1em;
+		}
+	}
+
+	.othercolor {
+		background-color: $MeD_other_color_3;
+		color: $othercolor2_text;
+		@extend %lightlinks;
+		
+		h1{
+			font-size:2.0em;
+		}
+		h2{
+			font-size:1.5em;
+		}
+		h3{
+			font-size:1.3em;
+		}
+		h4, h5, h6{
+			font-size:1.1em;
+		}
+	}
+
+
+	.MeD_arrowBox_top {
+		&.othercolor {
+			background-color: $nobackground;
+
+			div {
+				background-color: $MeD_other_color_3;
+				color: $othercolor3_text;
+			}
+
+			&:after {
+				border-bottom-color: $MeD_other_color_3;
+			}
+		}
+	}
+
+	.ribbon_quiz {
+		.btn-default {
+			border-radius: 8px;
+			color: $button-default-color;
+			background-color: $button-default-background-color;
+			border-color: $button-default-border-color;
+
+			&:hover {
+				color: $button-default-color-hover;
+				background-color: $button-default-background-color-hover;
+				border-color: $button-default-border-color-hover;
+			}
+		}
+	}
+
+	.fn-lnk {
+		background-color: $nobackground;
+		border-color: $nobackground;
+		color: $maincolor2_text;
+		@extend %lightlinks;
+	}
+}

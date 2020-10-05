@@ -1,0 +1,366 @@
+@import "./_vars";
+@import "../../common/scss/utils/_utils";
+
+// **********************************************************
+//
+//	external SCSS
+//
+// ***********************************************************
+
+@import "./_MeD_template"; //Template overrides of SNAP
+@import "./_MeD_css_utilities"; //for extra features re-usable on any object
+@import "./_MeD_color_applicator"; //styles for easy application of colors to any object
+@import "./_MeD_special_boxes"; //styles for information / GoTo / Go Deeper boxes
+@import "./_MeD_paystubs"; //styles for information / GoTo / Go Deeper boxes
+
+#dynamic_content {
+
+    // ******************************************************
+    //  Page Header Banner
+    // ******************************************************
+
+    $headermargin: 60px;
+    $sectionmargin: 100px;
+    $containerpadding: 80px;
+
+    header.container-fluid {
+        padding-top: $headermargin;
+        padding-bottom: $headermargin;
+        min-height: 300px;
+
+        background-color: $bannercolor;
+        background-image: url("../content/medias/images/TileBackground.png");
+        background-size: 25%;
+        background-repeat: repeat;
+        border-bottom: $bannerborderheight solid $bannerbordercolor;
+
+        img {
+            height: 250px;
+        }
+
+        color:white;
+    }
+
+    // ******************************************************
+    //  Page Content containers
+    // ******************************************************	
+
+    .container {
+        margin-top: $sectionmargin;
+        margin-bottom: $sectionmargin;
+
+        padding: $containerpadding;
+    }
+
+    .container-fluid {
+        padding-top: $sectionmargin;
+        padding-bottom: $sectionmargin;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        .container {
+            padding: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+            .paystub-buffer {
+                margin-top: 80px;
+            }
+        }
+    }
+
+    // ******************************************************
+    //  Module Objective Banner
+    // ******************************************************
+
+    .objective-circles {
+        display: flex;
+        justify-content: space-around;
+
+        .module-title:first-of-type {
+
+            &.active,
+            &.complete {
+                background-color: $objective-circle-1;
+            }
+        }
+
+        .module-title:nth-of-type(2) {
+
+            &.active,
+            &.complete {
+                background-color: $objective-circle-2;
+            }
+        }
+
+        .module-title:nth-of-type(3) {
+
+            &.active,
+            &.complete {
+                background-color: $objective-circle-3;
+            }
+        }
+
+        .module-title {
+            background-color: $nocolor;
+            border: 6px solid transparentize($bannercolor_text, 0.3);
+            color: transparentize($bannercolor_text, 0.3);
+
+            font-size: 1.5em !important;
+            width: 210px !important;
+            height: 210px !important;
+            border-radius: 600px;
+            line-height: 38px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            margin: 0px !important;
+            padding: 10px !important;
+        }
+
+        .module-title.active {
+            border: 6px solid $bannercolor_text;
+            color: $bannercolor_text;
+        }
+
+        .module-title.complete {
+            background-image: url(../content/medias/images/Checkmark.svg);
+            background-size: 73%;
+            background-repeat: no-repeat;
+            background-position: 21px 34px;
+            border: 6px solid white;
+            color: $lightcolor2_text;
+        }
+    }
+
+    .objective-subtitle {
+        display: flex;
+        justify-content: space-around;
+
+        .subText {
+            width: 200px;
+            font-weight: 600;
+            font-size: 1.3em !important;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            color: white;
+        }
+
+        .active {
+            font-weight: bold !important;
+        }
+    }
+
+    .checklist ul {
+        list-style-image: url(../content/medias/images/check.PNG);
+        margin-bottom: 80px;
+        margin-left: 24px;
+
+        li {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    // **********************************************************
+    //
+    //	COMPONENTS
+    //
+    // **********************************************************
+
+    // ******************************************************
+    // 	Accordion
+    // ******************************************************
+    .objective_accordion {
+        text-decoration: none;
+
+        summary {
+            border-radius: 0px;
+            border: none;
+            font-weight: bold;
+            background-color: $MeD_main_color_2;
+            color: $bannercolor_text;
+        }
+
+        details {
+            border-radius: 0px;
+            border: none;
+            background-color: $background_alternate;
+            color: $maincolor1_text;
+
+            p {
+                margin-top: 22px;
+                margin-left: 5px;
+            }
+
+            ul {
+                margin-bottom: 12px !important;
+                margin-top: 0px;
+            }
+
+            li:last-of-type {
+                margin-bottom: -12px !important;
+            }
+        }
+    }
+
+    // ******************************************************
+    //  Carousel Styling/Formatting
+    // ******************************************************
+    .wb-tabs.carousel-s1 {
+        ul {
+            margin: 0px;
+        }
+
+        li {
+            margin-bottom: 0px;
+        }
+
+        figcaption {
+            background-color: $MeD_main_color_2;
+        }
+
+        a {
+            color: $lightLinkColor;
+        }
+
+        .glyphicon {
+            color: black;
+        }
+    }
+
+    // ******************************************************
+    // 	Image slider
+    // ******************************************************
+    .screenshot_nav {
+        position: relative;
+
+        a {
+            color: black;
+
+            &:visited {
+                color: black;
+            }
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+
+            &.external::after {
+                background: url("base/icon_external_link.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 15px;
+                height: 15px;
+                content: "";
+                display: inline-block;
+                margin-left: 3px;
+            }
+        }
+    }
+
+    .mySlides {
+        img {
+            width: 100%;
+        }
+    }
+
+    .imagebuttonleft,
+    .imagebuttonright {
+        cursor: pointer;
+        position: absolute;
+        top: 68%;
+        width: auto;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 3em;
+        transition: 0.6s ease;
+        border-radius: 0 29px 29px 0;
+        user-select: none;
+        color: $MeD_secondary_color_2;
+        border: 0;
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .imagebuttonright {
+        right: 8%;
+        border-radius: 29px 0 0 29px;
+    }
+
+    .imagebuttonleft:hover,
+    .imagebuttonright:hover {
+        background-color: $MeD_other_color_3;
+        color: $MeD_secondary_color_2;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: $MeD_secondary_color_2;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        position: relative;
+        align-content: center;
+
+        &:hover {
+            background-color: $MeD_secondary_color_3;
+        }
+    }
+
+    .dot.active {
+        background-color: $lightcolor2;
+    }
+
+    .text {
+        border: 1px solid black;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.63);
+        color: black;
+        font-size: 0.75em;
+        padding: 5px 15px;
+        left: 50%;
+        bottom: 1%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    // ******************************************************
+    // CSS for Comparison table on slide m3-1
+    // ******************************************************
+
+    .tablecompare {
+        color: black;
+        text-align: left;
+
+        th,
+        td {
+            min-width: 50%;
+            border: 1px solid $MeD_main_color_2;
+            padding: 17px;
+        }
+
+        thead {
+            &>tr:first-of-type {
+                background: $lightcolor2;
+                color: white;
+                font-weight: bold;
+            }
+        }
+
+        tbody {
+            &>tr:nth-child(even) {
+                background: $MeD_mainbg_color;
+            }
+
+            &>tr:nth-child(odd) {
+                background: darken($MeD_mainbg_color, 8%);
+            }
+        }
+    }
+}
