@@ -14,42 +14,42 @@
   <p>When you open up your CWA pay stub, here is what it will look like:</p>
 </section>
 <section class="container-fluid othercolor">
-  <div class="container" style="padding-left: 200px; padding-right: 200px;">
+  <div class="container">
     <div class="row paystub-buffer">
       <div class="col-md-12">
 
         <div class="paystub-table paystub-theme-a">
-					<table class="table">
-						<caption class="wb-inv">Caption text for accessibility</caption>
+					<table class="table table-borderless">
+						<caption class="wb-inv">General section of the CWA Pay Stub</caption>
 						<tbody>
 							<tr>
-								<td colspan="2"><span class="link-theme-a">◄</span> Dated 2018/12/12 <span class="link-theme-a">►</span></td>
+								<td class="alignLeft" colspan="2"><span class="link-theme-a">◀</span> Dated 2018/12/12 <span class="link-theme-a">▶</span></td>
 							<tr>
-								<th id="info-name">Name:</th>
+								<th scope="row" id="info-name">Name:</th>
 								<td aria-describedby="info-name" headers="info-name">TREMBLAY, J</td>
 							</tr>
 							<tr>
-								<th id="info-employeeID">Employee ID:</th>
+								<th scope="row" id="info-employeeID">Employee ID:</th>
 								<td aria-describedby="info-employeeID" headers="info-employeeID">12345678</td>
 							</tr>
 							<tr>
-								<th id="info-businessUnit">Business Unit:</th>
+								<th scope="row" id="info-businessUnit">Business Unit:</th>
 								<td aria-describedby="info-businessUnit" headers="info-businessUnit">CSD00</td>
 							</tr>
 							<tr>
-								<th id="info-department">Department:</th>
+								<th scope="row" id="info-department">Department:</th>
 								<td aria-describedby="info-department" headers="info-department">624001</td>
 							</tr>
 							<tr>
-								<th id="info-province">Province of Work:</th>
+								<th scope="row" id="info-province">Province of Work:</th>
 								<td aria-describedby="info-province" headers="info-province">QC</td>
 							</tr>
 							<tr>
-								<th id="info-paychequeNb">Paycheque Number:</th>
+								<th scope="row" id="info-paychequeNb">Paycheque Number:</th>
 								<td aria-describedby="info-paychequeNb" headers="info-paychequeNb">88888888</td>
 							</tr>
 							<tr>
-								<th id="info-financialInstNb">Financial Insitution and Account No.:</th>
+								<th scope="row" id="info-financialInstNb">Financial Insitution and Account No.:</th>
 								<td aria-describedby="info-financialInstNb" headers="info-financialInstNb">*****************************0050</td>
 							</tr>
 						</tbody>
@@ -61,11 +61,11 @@
     <div class="row paystub-buffer">
       <div class="col-md-12">
 
-        <div class="paystub-table table-theme-a">
-          <div class="paystub-title">Pay <span class="link-theme-a">Help</span></div>
+        <div class="paystub-table paystub-theme-b">
+          <div class="paystub-title"><strong>Pay</strong><span class="link-theme-a">Help</span></div>
           <table class="table">
             <caption class="wb-inv">Caption text for accessibility</caption>
-            <thead>
+            <thead class="thead-dark">
               <tr>
                 <th scope="col">Type</th>
                 <th scope="col">Amount</th>
@@ -102,8 +102,8 @@
     <div class="row paystub-buffer">
       <div class="col-md-12">
 
-        <div class="paystub-table paystub-theme-a">
-          <div class="paystub-title">Statutory Deductions <span class="link-theme-a">Help</span></div>
+        <div class="paystub-table paystub-theme-b">
+          <div class="paystub-title"><strong>Statutory Deductions</strong><span class="link-theme-a">Help</span></div>
           <table class="table">
             <caption class="wb-inv">Caption text for accessibility</caption>
             <thead>
@@ -153,8 +153,8 @@
     <div class="row paystub-buffer">
       <div class="col-md-12">
 
-        <div class="paystub-table paystub-theme-a">
-          <div class="paystub-title">Voluntary Deductions <span class="link-theme-a">Help</span></div>
+        <div class="paystub-table paystub-theme-b">
+          <div class="paystub-title"><strong>Voluntary Deductions</strong><span class="link-theme-a">Help</span></div>
           <table class="table">
             <caption class="wb-inv">Caption text for accessibility</caption>
             <thead>
@@ -189,8 +189,8 @@
     <div class="row paystub-buffer">
       <div class="col-md-12">
 
-        <div class="paystub-table paystub-theme-a">
-          <div class="paystub-title">Other Deductions <span class="link-theme-a">Help</span></div>
+        <div class="paystub-table paystub-theme-b">
+          <div class="paystub-title"><strong>Other Deductions</strong><span class="link-theme-a">Help</span></div>
           <table class="table">
             <caption class="wb-inv">Caption text for accessibility</caption>
             <thead>
@@ -241,8 +241,11 @@
     <div class="row paystub-buffer">
       <div class="col-md-12">
 
-        <div class="paystub-table paystub-theme-a">
-          <div class="paystub-title">Entitlements and Deductions <span class="link-theme-a">Legend</span> | <span class="link-theme-a">Help</span></div>
+        <div class="paystub-table paystub-theme-b">
+          <div class="paystub-title">
+            <strong>Entitlements and Deductions</strong>
+            <span class="link-theme-a">Legend</span> | <span class="link-theme-a">Help</span>
+          </div>
           <table class="table">
             <caption class="wb-inv">Caption text for accessibility</caption>
             <thead>
@@ -255,13 +258,13 @@
             </thead>
             <tbody>
               <tr>
-                <td>From 15/11/18 To 28/11/18 <span class="link-theme-a">*Basic Pay</span></td>
+                <td>From 15/11/18 To 28/11/18<br /><span class="link-theme-a">*Basic Pay</span></td>
                 <td>75.00 H</td>
                 <td>-</td>
                 <td>$2,675.41+</td>
               </tr>
               <tr>
-                <td>From 15/11/18 To 28/11/18 <span class="link-theme-a">Bilingual Bonus Allowance</span></td>
+                <td>From 15/11/18 To 28/11/18<br /><span class="link-theme-a">Bilingual Bonus Allowance</span></td>
                 <td>-</td>
                 <td>-</td>
                 <td>$30.67+</td>

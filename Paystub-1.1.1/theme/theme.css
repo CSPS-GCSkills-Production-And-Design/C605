@@ -749,6 +749,43 @@ main {
   .highlight .fakelink {
     color: black !important; }
 
+.paystub-table {
+  background: white;
+  border: 3px solid black;
+  color: black; }
+  .paystub-table table.table-borderless td, .paystub-table table.table-borderless th {
+    border: 0; }
+
+.paystub-theme-a table {
+  margin-bottom: 10px; }
+
+.paystub-theme-b .paystub-title {
+  padding: 8px 12px;
+  text-align: right; }
+  .paystub-theme-b .paystub-title :first-child {
+    float: left; }
+.paystub-theme-b .paystub-title::after {
+  content: "";
+  clear: both;
+  display: table; }
+.paystub-theme-b table {
+  margin-bottom: 0; }
+  .paystub-theme-b table thead {
+    background-color: black;
+    color: white; }
+  .paystub-theme-b table thead th, .paystub-theme-b table tbody td {
+    border-color: black !important;
+    padding: 8px 12px; }
+  .paystub-theme-b table thead tr th:not(:first-child):not(:last-child), .paystub-theme-b table tbody tr td:not(:first-child):not(:last-child) {
+    text-align: center; }
+  .paystub-theme-b table thead tr th:last-child, .paystub-theme-b table tbody tr td:last-child {
+    text-align: right; }
+
+.link-theme-a {
+  color: #0000EE;
+  font-weight: 500;
+  text-decoration: underline; }
+
 #dynamic_content header.container-fluid {
   padding-top: 60px;
   padding-bottom: 60px;
