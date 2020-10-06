@@ -192,7 +192,7 @@ wb.i18nDict = {
 	"geo-sclln": "Map scale",
 	"geo-msepos": "Latitude and longitude of the mouse cursor",
 	"geo-ariamap": "Map object. The descriptions of the map features are in the table below.",
-	"geo-ally": "<b>Keyboard users:</b> When the map is in focus, use the arrow keys to pan the map and the plus and minus keys to zoom. The arrow keys will not pan the map when zoomed to the map extent.",
+	"geo-ally": "<strong>Keyboard users:</strong> When the map is in focus, use the arrow keys to pan the map and the plus and minus keys to zoom. The arrow keys will not pan the map when zoomed to the map extent.",
 	"geo-allyttl": "Instructions: Map Navigation",
 	"geo-tgllyr": "Toggle the display of the layer",
 	"geo-hdnlyr": "This layer is currently hidden.",

@@ -138,7 +138,7 @@ define([
 					that.toggleFavorite(this);
 					return false;	
 				}).addClass("btn-fav")
-					.append("<span class='debug'> " + $thisBtn.attr("data-fav") + "</span>");
+					.append("<span class='debug'>&nbsp;" + $thisBtn.attr("data-fav") + "</span>");
 					
 				var attrFav = $thisBtn.attr("data-fav");
 				var objIndex = attrFav.indexOf("#");

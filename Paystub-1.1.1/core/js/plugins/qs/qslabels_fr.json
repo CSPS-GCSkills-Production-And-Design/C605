@@ -10,12 +10,12 @@
 		"msgDuplicateDropDown" : "Vous ne pouvez pas sélectionner deux fois la même réponse.",
 		"msgQuestionUnanswered" : "Veuillez compléter la question avant de continuer.",
 		"msgActivityNotCompleted" : "Veuillez terminer l'activité avant de continuer.",
-		"msgFeedbackRecallAnswerPrefix" : "Vous avez répondu : ",
+		"msgFeedbackRecallAnswerPrefix" : "Vous avez répondu&nbsp;: ",
 		"msgFeedbackRecallNoAnswerPrefix" : "Vous n'avez rien répondu à cette question.",
 		"msgUnanweredQuestionGotoPrefix" : "Retourner à la question #",
 		"msgUnanweredQuestionGotoSuffix" : ".",
-		"msgPtsPrefix" : "Cette question vaut <b>",
-		"msgPtsSuffix" : "</b> points."
+		"msgPtsPrefix" : "Cette question vaut <strong>",
+		"msgPtsSuffix" : "</strong> points."
 		},
 
 	"domButtons" : 

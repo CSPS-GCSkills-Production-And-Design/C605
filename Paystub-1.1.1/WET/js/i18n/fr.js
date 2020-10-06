@@ -192,7 +192,7 @@ wb.i18nDict = {
 	"geo-sclln": "Échelle de la carte",
 	"geo-msepos": "Latitude et longitude du curseur de la souris",
 	"geo-ariamap": "Objet de la carte. Les descriptions des caractéristiques de la carte se trouvent dans la table ci-dessous.",
-	"geo-ally": "<b>Utilisateurs de clavier :</b> Lorsque la carte a l'attention, utiliser les touches flèches pour déplacer la carte et utiliser les touches plus et négatif pour faire un zoom. La carte ne peut être déplacée lorsque le zoom est à son étendue maximal.",
+	"geo-ally": "<strong>Utilisateurs de clavier :</strong> Lorsque la carte a l'attention, utiliser les touches flèches pour déplacer la carte et utiliser les touches plus et négatif pour faire un zoom. La carte ne peut être déplacée lorsque le zoom est à son étendue maximal.",
 	"geo-allyttl": "Instructions : comment naviguer dans la carte",
 	"geo-tgllyr": "Basculer l'affichage de la couche",
 	"geo-hdnlyr": "Cette couche est présentement cachée.",

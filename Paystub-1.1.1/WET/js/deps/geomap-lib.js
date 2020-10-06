@@ -355,7 +355,7 @@ var componentName = "wb-geomap",
 			// Update content from feature
 			for ( name in feature.attributes ) {
 				if ( feature.attributes.hasOwnProperty( name ) && name.length !== 0 ) {
-					content += "<p><b>" + name + colon + "</b><br />" + feature.attributes[ name ] + "</p>";
+					content += "<p><strong>" + name + colon + "</strong><br />" + feature.attributes[ name ] + "</p>";
 				}
 			}
 		}

@@ -6,7 +6,7 @@ define(['jquery', 'history', 'labels','settings-core', 'modules/environment'], f
 		var isLocal=(CoreSettings.environment==="prod")?false:true;
 
 
-		//if(hasPop&&!window.opener && !isLocal)  {self.close(); }// added for users who reload with right mouse click or CTRL-R
+		if(hasPop&&!window.opener && !isLocal)  {self.close(); }// added for users who reload with right mouse click or CTRL-R
 
 
 

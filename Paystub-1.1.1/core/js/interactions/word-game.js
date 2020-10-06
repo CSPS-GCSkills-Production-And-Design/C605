@@ -257,7 +257,7 @@ function letterObj(){
 		var resolvecode=this.parentWord.index+","+this.index
 		var ariaControls=" aria-controls=\"budgetbox\" aria-live=\"polite\" ";
 		var bgStyle = (!randomBG)?"":" style= background-position:"+(Math.random()*100)+"% "+(Math.random()*100)+"%;";
-		$(this.parentWord.wordObj).append("<a href=\"#\" class=\"wg-letter\" "+ariaControls+bgStyle+" onclick=\"resolveLetter("+resolvecode+")\"><span class=\"wb-inv\">Blank(Click to buy this letter)</span> </a>")
+		$(this.parentWord.wordObj).append("<a href=\"#\" class=\"wg-letter\" "+ariaControls+bgStyle+" onclick=\"resolveLetter("+resolvecode+")\"><span class=\"wb-inv\">Blank(Click to buy this letter)</span>&nbsp;</a>")
 		//if (randomBG){$(this.parentWord.wordObj).children("a").css("background-position", " "+(Math.random()*100)+"% "+(Math.random()*100)+"%")}
 		this.obj=$(this.parentWord.wordObj).children("a").eq(index)
 		

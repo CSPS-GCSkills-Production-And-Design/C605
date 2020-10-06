@@ -504,8 +504,8 @@
 
 					if ($(".mfp-container").HasScrollBar()){						
 						$('.listNavShow').last()
-						//backButton = $('.listNavShow').last().not('.backBtn').addClass('backBtn').append('<a class="btn btn-default" href="#backToTop"></a>');
-						//$(backButton).find('a.btn-default').html(labels.nav.backToTop);
+						backButton = $('.listNavShow').last().not('.backBtn').addClass('backBtn').append('<a class="btn btn-default" href="#backToTop"></a>');
+						$(backButton).find('a.btn-default').html(labels.nav.backToTop);
 					}
                 }); // end click()
 

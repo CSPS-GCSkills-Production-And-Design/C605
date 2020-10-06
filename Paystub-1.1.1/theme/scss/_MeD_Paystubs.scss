@@ -105,57 +105,93 @@ $paystub-nav-button-size: 50px;
 	}
 }
 
+.link-theme-a {
+	color: #0000EE;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+// Paystub table
+$themeA_border: 3px solid black;
+
 .paystub-table {
-	background:white;
-	border:3px solid black;
-	color:black;
+	background: white;
+	border: $themeA_border;
+	color: black;
 	table.table-borderless td, table.table-borderless th {
-		border:0;
+		border: 0;
 	}
 }
 
-//Paystub theme A
-.paystub-theme-a {
+//Paystub table theme A
+.paystub-table.paystub-theme-a {
 	table {
-		margin-bottom:10px;
+		margin-bottom: 10px;
+		tbody th {
+			font-weight: 500;
+		}
 	}
 }
 
-// Paystub theme B
-.paystub-theme-b {
+// Paystub table theme B
+.paystub-table.paystub-theme-b {
 	.paystub-title {
-		padding:8px 12px;
-		text-align:right;
+		padding: 8px 12px;
+		text-align: right;
 		:first-child {
-			float:left;
+			float: left;
 		}
 	}
 	.paystub-title::after {
 		content: "";
 		clear: both;
-		display:table;
+		display: table;
 	}
 	table {
-		margin-bottom:0;
+		margin-bottom: 0;
 		thead {
-			background-color:black;
-			color:white;
+			background-color: black;
+			color: white;
 		}
 		thead th, tbody td {
-			border-color:black !important;
-			padding:8px 12px;
+			border-color: black !important;
+			padding: 8px 12px;
 		}
 		thead tr th:not(:first-child):not(:last-child), tbody tr td:not(:first-child):not(:last-child) {
-			text-align:center;
+			text-align: center;
 		}
 		thead tr th:last-child, tbody tr td:last-child {
-			text-align:right;
+			text-align: right;
 		}
 	}
 }
 
-.link-theme-a {
-	color:#0000EE;
-	font-weight:500;
-	text-decoration:underline;
+//Paystub row
+
+.paystub-row {
+	border: 3px solid #4bacc6;
+	display: flex;
+	.paystub-col {
+		-ms-flex: 1 1 auto;
+		flex-basis: 0;
+		flex-grow: 1;
+		padding: 8px 12px;
+	}
+}
+.paystub-row.paystub-theme-a {
+	background: white;
+	color: black;
+	padding: 4px;
+	.borderBottom {
+		border-bottom: $themeA_border;
+	}
+	.borderLeft {
+		border-left: $themeA_border;
+	}
+	.borderRight {
+		border-right: $themeA_border;
+	}
+	.borderTop {
+		border-top: $themeA_border;
+	}
 }

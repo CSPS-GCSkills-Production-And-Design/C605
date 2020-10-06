@@ -14,8 +14,8 @@
 		"msgFeedbackRecallNoAnswerPrefix" : "You did not answer this question.",
 		"msgUnanweredQuestionGotoPrefix" : "Please answer question #",
 		"msgUnanweredQuestionGotoSuffix" : ".",
-		"msgPtsPrefix" : "Question is worth <b>",
-		"msgPtsSuffix" : "</b> points."
+		"msgPtsPrefix" : "Question is worth <strong>",
+		"msgPtsSuffix" : "</strong> points."
 		},
 
 	"domButtons" : 

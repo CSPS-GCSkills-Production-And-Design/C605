@@ -36,19 +36,9 @@ footer {
       &.back {
         @include triangle(left, $footer-button-color, 4px);
         &.disabled {
-          @include triangle(
-            left,
-            $footer-button-color-disabled,
-            4px,
-            !important
-          );
+          @include triangle(left, $footer-button-color-disabled, 4px, !important);
           &:hover {
-            @include triangle(
-              left,
-              $footer-button-color-disabled,
-              4px,
-              !important
-            );
+            @include triangle(left, $footer-button-color-disabled, 4px, !important);
           }
         }
         &:before {
@@ -61,19 +51,9 @@ footer {
       &.next {
         @include triangle(right, $footer-button-color, 4px);
         &.disabled {
-          @include triangle(
-            right,
-            $footer-button-color-disabled,
-            4px,
-            !important
-          );
+          @include triangle(right, $footer-button-color-disabled, 4px, !important);
           &:hover {
-            @include triangle(
-              right,
-              $footer-button-color-disabled,
-              4px,
-              !important
-            );
+            @include triangle(right, $footer-button-color-disabled, 4px, !important);
           }
         }
         &:after {
@@ -105,44 +85,42 @@ html.mobile {
   footer {
     .container {
       width: 100%;
-      &:before,
-      &:after {
-        content: "";
-        display: inherit;
-        clear: none;
+      &:before, &:after {
+          content: "";
+          display: inherit;
+          clear: none;
       }
       .backnext {
         float: none;
         width: 100%;
         display: table;
         text-align: center;
-        a,
-        span:not(.pagelbl) {
-          text-align: center;
-          display: table-cell;
-          vertical-align: middle;
-          height: 100%;
-          border: none;
+        a, span:not(.pagelbl) {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            border: none;
         }
         a {
-          color: $footer-button-color;
-          text-align: center;
-          display: inline-block;
-          background-position: center center;
-          background-color: $footer-mobile-button-background-color;
-          @include hide-text;
-          &.back {
-            @include triangle(left, $footer-button-color-mobile, 4px);
-            &:before {
-              left: 50%;
+            color: $footer-button-color;
+            text-align: center;
+            display: inline-block;
+            background-position: center center;
+            background-color: $footer-mobile-button-background-color;
+            @include hide-text;
+            &.back {
+              @include triangle(left, $footer-button-color-mobile, 4px);
+              &:before {
+                left: 50%;
+              }
             }
-          }
-          &.next {
-            @include triangle(right, $footer-button-color-mobile, 4px);
-            &:after {
-              right: 50%;
+            &.next {
+              @include triangle(right, $footer-button-color-mobile, 4px);
+              &:after {
+                right: 50%;
+              }
             }
-          }
         }
         span:not(.pagelbl) {
           display: table-cell;

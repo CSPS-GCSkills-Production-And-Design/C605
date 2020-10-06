@@ -10,14 +10,14 @@ define([
 
 	return {
 		initCollapsible: function(obj) {
-			obj.html("<div class='wrapper'>" + obj.html() + "</div>\n<p class='handle' aria-hidden='true'><span>More<a href='#'> </a></span></p>");
+			obj.html("<div class='wrapper'>" + obj.html() + "</div>\n<p class='handle' aria-hidden='true'><span>More<a href='#'>&nbsp;</a></span></p>");
 			var lang = $('html').attr('lang');
 			var strings = {
-				more: (Utils.lang == 'en' ? '<span class=\'wb-inv\'>Display more</span>&nbsp' : '<span class=\'wb-inv\'>Afficher plus</span> '),
-				less: (Utils.lang == 'en' ? '<span class=\'wb-inv\'>Display less</span>&nbsp' : '<span class=\'wb-inv\'>Afficher moins</span> ')
+				more: (Utils.lang == 'en' ? '<span class=\'wb-inv\'>Display more</span>&nbsp' : '<span class=\'wb-inv\'>Afficher plus</span>&nbsp;'),
+				less: (Utils.lang == 'en' ? '<span class=\'wb-inv\'>Display less</span>&nbsp' : '<span class=\'wb-inv\'>Afficher moins</span>&nbsp;')
 			};
 
-			obj.children("p.handle").children("span").html(strings.more + "<a href='#'> <span class=\'wb-inv\'>Click to toggle</span></a>");
+			obj.children("p.handle").children("span").html(strings.more + "<a href='#'>&nbsp;<span class=\'wb-inv\'>Click to toggle</span></a>");
 			var $handle = obj.children("p.handle").children("span").children("a");
 			$handle.click(function(e) {
 				var $this = $(this);

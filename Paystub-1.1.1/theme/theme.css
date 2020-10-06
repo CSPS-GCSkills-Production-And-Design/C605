@@ -749,6 +749,11 @@ main {
   .highlight .fakelink {
     color: black !important; }
 
+.link-theme-a {
+  color: #0000EE;
+  font-weight: 500;
+  text-decoration: underline; }
+
 .paystub-table {
   background: white;
   border: 3px solid black;
@@ -756,35 +761,54 @@ main {
   .paystub-table table.table-borderless td, .paystub-table table.table-borderless th {
     border: 0; }
 
-.paystub-theme-a table {
+.paystub-table.paystub-theme-a table {
   margin-bottom: 10px; }
+  .paystub-table.paystub-theme-a table tbody th {
+    font-weight: 500; }
 
-.paystub-theme-b .paystub-title {
+.paystub-table.paystub-theme-b .paystub-title {
   padding: 8px 12px;
   text-align: right; }
-  .paystub-theme-b .paystub-title :first-child {
+  .paystub-table.paystub-theme-b .paystub-title :first-child {
     float: left; }
-.paystub-theme-b .paystub-title::after {
+.paystub-table.paystub-theme-b .paystub-title::after {
   content: "";
   clear: both;
   display: table; }
-.paystub-theme-b table {
+.paystub-table.paystub-theme-b table {
   margin-bottom: 0; }
-  .paystub-theme-b table thead {
+  .paystub-table.paystub-theme-b table thead {
     background-color: black;
     color: white; }
-  .paystub-theme-b table thead th, .paystub-theme-b table tbody td {
+  .paystub-table.paystub-theme-b table thead th, .paystub-table.paystub-theme-b table tbody td {
     border-color: black !important;
     padding: 8px 12px; }
-  .paystub-theme-b table thead tr th:not(:first-child):not(:last-child), .paystub-theme-b table tbody tr td:not(:first-child):not(:last-child) {
+  .paystub-table.paystub-theme-b table thead tr th:not(:first-child):not(:last-child), .paystub-table.paystub-theme-b table tbody tr td:not(:first-child):not(:last-child) {
     text-align: center; }
-  .paystub-theme-b table thead tr th:last-child, .paystub-theme-b table tbody tr td:last-child {
+  .paystub-table.paystub-theme-b table thead tr th:last-child, .paystub-table.paystub-theme-b table tbody tr td:last-child {
     text-align: right; }
 
-.link-theme-a {
-  color: #0000EE;
-  font-weight: 500;
-  text-decoration: underline; }
+.paystub-row {
+  border: 3px solid #4bacc6;
+  display: flex; }
+  .paystub-row .paystub-col {
+    -ms-flex: 1 1 auto;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 8px 12px; }
+
+.paystub-row.paystub-theme-a {
+  background: white;
+  color: black;
+  padding: 4px; }
+  .paystub-row.paystub-theme-a .borderBottom {
+    border-bottom: 3px solid black; }
+  .paystub-row.paystub-theme-a .borderLeft {
+    border-left: 3px solid black; }
+  .paystub-row.paystub-theme-a .borderRight {
+    border-right: 3px solid black; }
+  .paystub-row.paystub-theme-a .borderTop {
+    border-top: 3px solid black; }
 
 #dynamic_content header.container-fluid {
   padding-top: 60px;
@@ -801,7 +825,7 @@ main {
 #dynamic_content .container {
   margin-top: 100px;
   margin-bottom: 100px;
-  padding: 80px; }
+  padding: 81px; }
 #dynamic_content .container-fluid {
   padding-top: 100px;
   padding-bottom: 100px;

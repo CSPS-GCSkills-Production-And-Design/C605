@@ -69,6 +69,10 @@ define({
 	
 	googleAnalyticsID: "",	/*UA-101907595-7*/
 
+	/*------------------ DATA / Matomo Analytics -----------------*/
+
+	matomoAnalytics: true,
+
 	/*------------------ Navigation -----------------*/
 	topNavFullwidth:     true,
 	breadCrumbs: 	     true,
@@ -128,7 +132,7 @@ define({
 		//valid values: "slow", "normal", "fast"
 		animationSpeed: "normal",
 		// Factor of screen size (%) that the section must cross
-		// before it's considered visible/invisible
+   	// before it's considered visible/invisible
 		TOP_MARGIN: 0.1,
 		BOTTOM_MARGIN: 0.1,
         //Enables/disables the window resize warning & refresh dialog

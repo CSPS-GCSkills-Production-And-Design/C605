@@ -18,18 +18,18 @@ define(['settings-core', 'labels'], function(CoreSettings, labels) {
 
 		//temporary popper
 		var params = [
-			'height=' + (screen.availHeight),	
-			'width=' + (screen.availWidth),
+			'height=' + screen.height,
+			'width=' + screen.width,
 			'scrollbars=1',
-			'resizable=1',
-			'fullscreen=no' //only works in IE
+			'resizable=1'//,
+		   // 'fullscreen=yes' // only works in IE
 		].join(',');
 
 		popup = window.open(target, 'popup_window_' + CoreSettings.courseLegacyCode, params);
-		popup.moveTo(-3, -5);
-		//window.top.resizeTo(100, 50);
-		//window.top.moveTo(9999, 9999);
-		//popup.addEventListener('beforeunload',closeCourse,false);				
+		popup.moveTo(0, 0);
+		window.top.resizeTo(100, 50);
+		window.top.moveTo(9999, 9999);
+		popup.addEventListener('beforeunload',closeCourse,false);				
 	}
 	window.launchPop = launchPop;
 
@@ -55,15 +55,15 @@ define(['settings-core', 'labels'], function(CoreSettings, labels) {
 	function closeCourse(){
 		if(popup && !popup.window.amINavigating){			
 			saveScormValues();			
-			//popup.close();
-			//window.top.close();
+			popup.close();
+			window.top.close();
 		}		
 		
 	}
 	window.closeCourse = closeCourse; // used in browsereventscripts too!	
 	
 	window.addEventListener('load', loadScorm, false);
-	//window.addEventListener('beforeunload',closeLauncher,false);
+	window.addEventListener('beforeunload',closeLauncher,false);
 
 	function loadScorm() {
 		//init the connection for the APIWrapper
@@ -81,8 +81,8 @@ define(['settings-core', 'labels'], function(CoreSettings, labels) {
 	}
 	function closeLauncher(e){
 		if(popup){
-			//popup.close();
-			//window.top.close();
+			popup.close();
+			window.top.close();
 		}
 	}
 	function saveScormValues(e) {
