@@ -755,9 +755,11 @@ main {
   text-decoration: underline; }
 
 .paystub-table {
-  background: white;
+  background-color: white;
   border: 3px solid black;
   color: black; }
+  .paystub-table table {
+    background-color: white; }
   .paystub-table table.table-borderless td, .paystub-table table.table-borderless th {
     border: 0; }
 
@@ -811,14 +813,13 @@ main {
       font-size: 0.8em; }
 
 .paystub-row {
-  align-items: stretch;
   border: 3px solid #4bacc6;
-  display: flex; }
+  display: table;
+  width: 100%; }
   .paystub-row .paystub-col {
-    -ms-flex: 1 1 auto;
-    align-self: center;
-    flex-grow: 1;
-    padding: 8px 12px; }
+    display: table-cell;
+    padding: 8px 12px;
+    vertical-align: middle; }
 
 .paystub-row.no-border-bottom {
   border-bottom: 0; }
@@ -840,8 +841,6 @@ main {
     border-right: 3px solid black; }
   .paystub-row.paystub-theme-a .borderTop {
     border-top: 3px solid black; }
-  .paystub-row.paystub-theme-a :first-child {
-    font-weight: 500; }
 
 .paystub-row.paystub-theme-b {
   background: white;

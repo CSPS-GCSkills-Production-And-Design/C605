@@ -115,9 +115,12 @@ $paystub-nav-button-size: 50px;
 $themeA_border: 3px solid black;
 
 .paystub-table {
-	background: white;
+	background-color: white;
 	border: $themeA_border;
 	color: black;
+	table {
+		background-color: white;
+	}
 	table.table-borderless td, table.table-borderless th {
 		border: 0;
 	}
@@ -200,15 +203,13 @@ $themeA_border: 3px solid black;
 
 //Paystub row
 .paystub-row {
-	align-items: stretch;
 	border: 3px solid #4bacc6;
-	display: flex;
+	display: table;
+	width: 100%;
 	.paystub-col {
-		-ms-flex: 1 1 auto;
-		align-self: center;
-		//flex-basis: 0;
-		flex-grow: 1;
+		display: table-cell;
 		padding: 8px 12px;
+		vertical-align: middle;
 	}
 }
 .paystub-row.no-border-bottom {
@@ -242,7 +243,7 @@ $themeA_border: 3px solid black;
 		border-top: $themeA_border;
 	}
 	:first-child {
-		font-weight:500;
+		//font-weight:500;
 	}
 }
 
