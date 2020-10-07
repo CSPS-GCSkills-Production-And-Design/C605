@@ -184,6 +184,9 @@ $themeA_border: 3px solid black;
 		thead {
 			background-color: #dfe6ee; //#7fa4c0
 			color: #6f8eab;
+			tr th {
+				border-bottom:0;
+			}
 		}
 		th, td {
 			padding: 8px;
@@ -197,20 +200,35 @@ $themeA_border: 3px solid black;
 
 //Paystub row
 .paystub-row {
-	align-items: center;
+	align-items: stretch;
 	border: 3px solid #4bacc6;
 	display: flex;
 	.paystub-col {
 		-ms-flex: 1 1 auto;
-		flex-basis: 0;
+		align-self: center;
+		//flex-basis: 0;
 		flex-grow: 1;
 		padding: 8px 12px;
 	}
 }
+.paystub-row.no-border-bottom {
+	border-bottom:0;
+}
+.paystub-row.no-border-top {
+	border-top:0;
+}
+
+.paystub-row.col-bordered {
+	.paystub-col {
+		border-right: 1px solid #ddd;
+	}
+}
+
+// Paystub-row theme A
 .paystub-row.paystub-theme-a {
 	background: white;
 	color: black;
-	padding: 4px;
+	//padding: 4px;
 	.borderBottom {
 		border-bottom: $themeA_border;
 	}
@@ -228,6 +246,7 @@ $themeA_border: 3px solid black;
 	}
 }
 
+// Paystub-row theme B
 .paystub-row.paystub-theme-b {
 	background:white;
 	padding:4px;

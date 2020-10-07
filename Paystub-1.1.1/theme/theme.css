@@ -802,6 +802,8 @@ main {
     .paystub-table.paystub-theme-c table thead {
       background-color: #dfe6ee;
       color: #6f8eab; }
+      .paystub-table.paystub-theme-c table thead tr th {
+        border-bottom: 0; }
     .paystub-table.paystub-theme-c table th, .paystub-table.paystub-theme-c table td {
       padding: 8px;
       vertical-align: middle; }
@@ -809,19 +811,27 @@ main {
       font-size: 0.8em; }
 
 .paystub-row {
-  align-items: center;
+  align-items: stretch;
   border: 3px solid #4bacc6;
   display: flex; }
   .paystub-row .paystub-col {
     -ms-flex: 1 1 auto;
-    flex-basis: 0;
+    align-self: center;
     flex-grow: 1;
     padding: 8px 12px; }
 
+.paystub-row.no-border-bottom {
+  border-bottom: 0; }
+
+.paystub-row.no-border-top {
+  border-top: 0; }
+
+.paystub-row.col-bordered .paystub-col {
+  border-right: 1px solid #ddd; }
+
 .paystub-row.paystub-theme-a {
   background: white;
-  color: black;
-  padding: 4px; }
+  color: black; }
   .paystub-row.paystub-theme-a .borderBottom {
     border-bottom: 3px solid black; }
   .paystub-row.paystub-theme-a .borderLeft {
