@@ -848,6 +848,8 @@ main {
   .paystub-row.paystub-theme-b .paystub-col {
     background: black;
     color: white; }
+  .paystub-row.paystub-theme-b :first-child {
+    width: 40%; }
 
 #dynamic_content header.container-fluid {
   padding-top: 60px;
