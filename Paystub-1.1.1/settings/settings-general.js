@@ -11,13 +11,13 @@ define({
   skipSplash: false,
 
   /*------------------ Course info -----------------*/
-  courseLegacyCode: "C800",
+  courseLegacyCode: "C605",
   courseTitle_en: "Demystifying Your Pay Stubs",
   courseTitle_fr: "Démystifier vos talons de paye",
-  courseSubtitle_en: "Module 1",
-  courseSubtitle_fr: "Un cours sample!",
-  seriesTitle_en: "Demystifying Your Pay Stubs",
-  seriesTitle_fr: "Démystifier vos talons de paye",
+  courseSubtitle_en: "",
+  courseSubtitle_fr: "",
+  seriesTitle_en: "",
+  seriesTitle_fr: "",
 
   /*------------------ Toolbar -----------------*/
   showLangSwitch: false,
