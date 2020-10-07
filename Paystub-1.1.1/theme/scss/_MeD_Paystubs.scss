@@ -156,6 +156,7 @@ $themeA_border: 3px solid black;
 		thead th, tbody td {
 			border-color: black !important;
 			padding: 8px 12px;
+			vertical-align: middle;
 		}
 		thead tr th:not(:first-child):not(:last-child), tbody tr td:not(:first-child):not(:last-child) {
 			text-align: center;
@@ -167,8 +168,8 @@ $themeA_border: 3px solid black;
 }
 
 //Paystub row
-
 .paystub-row {
+	align-items: center;
 	border: 3px solid #4bacc6;
 	display: flex;
 	.paystub-col {
@@ -193,5 +194,17 @@ $themeA_border: 3px solid black;
 	}
 	.borderTop {
 		border-top: $themeA_border;
+	}
+	:first-child {
+		font-weight:500;
+	}
+}
+
+.paystub-row.paystub-theme-b {
+	background:white;
+	padding:4px;
+	.paystub-col {
+		background:black;
+		color:white;
 	}
 }
