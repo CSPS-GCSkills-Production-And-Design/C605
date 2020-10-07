@@ -20,7 +20,7 @@ define({
   seriesTitle_fr: "",
 
   /*------------------ Toolbar -----------------*/
-  showLangSwitch: false,
+  showLangSwitch: true,
   showHome: true,
   showHelp: true,
   showSitemap: true,
