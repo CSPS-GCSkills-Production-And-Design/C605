@@ -17,21 +17,21 @@
 	</div>
 </section>
 <section class="container-fluid othercolor">
-	<div class="container" style="padding-left:100px; padding-right:100px;">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 
-				<div class="paystub-table paystub-theme-b">
-					<table class="table">
-						<caption class="wb-inv">General information section of a Phoenix Pay Stub containing dummy values.</caption>
+				<div class="paystub-table paystub-theme-c">
+					<table class="table table-borderless">
+						<caption class="wb-inv">Section d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
             <tbody>
               <tr>
                 <td colspan="2">Jane Tremblay</td>
                 <th scope="row" id="general-netPay">Rev. Pay:</th>
-                <td aria-describedby="general-netPay" headers="general-net-pay">1,632.77$</td>
+                <td aria-describedby="general-netPay" headers="general-net-pay">1 632,77$</td>
               </tr>
 							<tr>
-                <td colspan="2">Société<br /><strong>Gouvernement Canada</strong></td>
+                <td colspan="2"><strong>Société</strong><br />Gouvernement Canada</td>
                 <th scope="row" id="general-payBeginDate">Date début paie:</th>
                 <td aria-describedby="general-payBeginDate" headers="general-payBeginDate">12/07/2018</td>
               </tr>
@@ -54,10 +54,10 @@
 					</table>
 				</div><!-- end .paystub-table -->
 
-				<div class="paystub-table paystub-theme-b">
-					<div class="paystub-title">Données générales</div>
-					<table class="table table-theme-b">
-						<caption class="wb-inv">Caption for accessibility</caption>
+				<div class="paystub-table paystub-theme-c">
+					<div class="paystub-title"><strong>Données générales</strong></div>
+					<table class="table table-borderless">
+						<caption class="wb-inv">Section Données générales d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
             <tbody>
               <tr>
                 <th scope="row" id="general-name">Nom:</th>
@@ -90,7 +90,7 @@
 							<tr>
 								<td colspan="2">-</td>
                 <th scope="row" id="general-payRate">Taux salaire:</th>
-								<td aria-describedby="general-payRate" headers="general-payRate">2,675.41$ Quinzaine</td>
+								<td aria-describedby="general-payRate" headers="general-payRate">2 675,41$ Quinzaine</td>
               </tr>
 						</tbody>
 					</table>
@@ -101,28 +101,28 @@
 		<div class="row paystub-buffer">
 			<div class="col-md-12">
 
-				<div class="paystub-table paystub-theme-b">
-					<div class="paystub-title">Données fiscales</div>
-					<table class="table">
-						<caption class="wb-inv"></caption>
+				<div class="paystub-table paystub-theme-c">
+					<div class="paystub-title"><strong>Données fiscales</strong></div>
+					<table class="table table-borderless">
+						<caption class="wb-inv">Section Données fiscales d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
 						<tbody>
 							<tr>
 								<th scope="col" id="taxData-fedNetClaim">Mt net féd.:</th>
-								<td aria-describedby="taxData-fedNetClaim" headers="taxData-fedNetClaim">12069.00$</td>
+								<td aria-describedby="taxData-fedNetClaim" headers="taxData-fedNetClaim">12 069,00$</td>
 								<th scope="col" id="taxData-mbNetClaim">MB Décl. nette:</th>
-								<td aria-describedby="taxData-mbNetClaim" headers="taxData-mbNetClaim">9626.00$</td>
+								<td aria-describedby="taxData-mbNetClaim" headers="taxData-mbNetClaim">9 626,00$</td>
 							</tr>
 							<tr>
 								<th scope="col" id="taxData-fedSpclLetters">Lettres spec. féd.:</th>
-								<td colspan="3" aria-describedby="taxData-fedSpclLetters" headers="taxData-fedSpclLetters">0.00$</td>
+								<td colspan="3" aria-describedby="taxData-fedSpclLetters" headers="taxData-fedSpclLetters">0,00$</td>
 							</tr>
 							<tr>
 								<th scope="col" id="taxData-fedAddlPercent">Porucentage suppl.féd:</th>
-								<td colspan="3" aria-describedby="taxData-fedAddlPercent" headers="taxData-fedAddlPercent">0.000</td>
+								<td colspan="3" aria-describedby="taxData-fedAddlPercent" headers="taxData-fedAddlPercent">0,000</td>
 							</tr>
 							<tr>
 								<th scope="col" id="taxData-fedAddlAmount">Mt. suppl. féd:</th>
-								<td colspan="3" aria-describedby="taxData-fedAddlAmount" headers="taxData-fedAddlAmount">40.00$</td>
+								<td colspan="3" aria-describedby="taxData-fedAddlAmount" headers="taxData-fedAddlAmount">40,00$</td>
 							</tr>
 						</tbody>
 					</table>
@@ -133,28 +133,28 @@
 		<div class="row paystub-buffer">
 			<div class="col-md-12">
 
-				<div class="paystub-table paystub-theme-b">
-					<div class="paystub-title">Sommaire chèques paie</div>
+				<div class="paystub-table paystub-theme-c">
+					<div class="paystub-title"><strong>Sommaire chèques paie</strong></div>
 					<table class="table">
-						<caption class="wb-inv"></caption>
+						<caption class="wb-inv">Section Sommaire chèque paie d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
 						<thead>
 							<tr>
 								 <th scope="col">Période</th>
-								 <th scope="col">Revenu brut</th>
-								 <th scope="col">Brut imposable IRC</th>
-								 <th scope="col">Total impôt</th>
-								 <th scope="col">Total retenues</th>
-								 <th scope="col">Revenu net</th>
+								 <th scope="col" class="alignRight">Revenu brut</th>
+								 <th scope="col" class="alignRight">Brut imposable IRC</th>
+								 <th scope="col" class="alignRight">Total impôt</th>
+								 <th scope="col" class="alignRight">Total retenues</th>
+								 <th scope="col" class="alignRight">Revenu net</th>
 						 </tr>
 						</thead>
 						<tbody>
 							<tr>
 								<th scope="col">Courant:</th>
-								<td>2,706.08</td>
-								<td>2,354.06</td>
-								<td>641.12</td>
-								<td>376.15</td>
-								<td>1,631.77</td>
+								<td class="alignRight">2 706,08</td>
+								<td class="alignRight">2 354,06</td>
+								<td class="alignRight">641,12</td>
+								<td class="alignRight">376,15</td>
+								<td class="alignRight">1 631,77</td>
 							</tr>
 						</tbody>
 					</table>
@@ -165,68 +165,68 @@
 		<div class="row paystub-buffer">
 			<div class="col-md-12">
 
-				<div class="paystub-table paystub-theme-b">
-					<div class="paystub-title">Revenus</div>
-					<table class="table">
+				<div class="paystub-table paystub-theme-c">
+					<div class="paystub-title"><strong>Revenus</strong></div>
+					<table class="table table-striped">
 						<caption class="wb-inv">Section Revenus d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
 						<thead>
 							<tr>
 								 <th scope="col">Description</th>
 								 <th scope="col">Description</th>
-								 <th scope="col">Heures</th>
-								 <th scope="col">Tx horaire</th>
-								 <th scope="col" id="earnings-amount">Montant</th>
+								 <th scope="col" class="alignRight">Heures</th>
+								 <th scope="col" class="alignRight">Tx horaire</th>
+								 <th scope="col" class="alignRight" id="earnings-amount">Montant</th>
 						 </tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>*Rémunération de base</td>
 								<td>001</td>
-								<td>-</td>
-								<td>-</td>
-								<td>2,675.41</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">2 675,41</td>
 							</tr>
 							<tr>
 								<td>Prime au bilinguisme</td>
 								<td>141</td>
-								<td>-</td>
-								<td>-</td>
-								<td>30.67</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">30,67</td>
 							</tr>
 							<tr>
 								<td>-</td>
 								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">-</td>
 							</tr>
 							<tr>
 								<td>-</td>
 								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">-</td>
 							</tr>
 							<tr>
 								<td>-</td>
 								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">-</td>
 							</tr>
 							<tr>
 								<td>-</td>
 								<td>-</td>
-								<td>-</td>
-								<td>-</td>
-								<td>-</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">-</td>
 							</tr>
 							<tr>
 								<td>-</td>
 								<th scope="row" id="earnings-total">Total:</th>
-								<td>-</td>
-								<td>-</td>
-								<td headers="earnings-total earnings-amount">2,706.08</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight">-</td>
+								<td class="alignRight" headers="earnings-total earnings-amount">2 706,08</td>
 							</tr>
 						</tbody>
 					</table>
@@ -245,48 +245,48 @@
 
 			<div class="col-md-12">
 
-				<div class="paystub-table paystub-theme-b">
-					<div class="paystub-title">Impôts</div>
-					<table class="table">
-						<caption class="wb-inv"></caption>
+				<div class="paystub-table paystub-theme-c">
+					<div class="paystub-title"><strong>Impôts</strong></div>
+					<table class="table table-striped">
+						<caption class="wb-inv">Section Impôts d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
 						<thead>
 							<tr>
 								 <th scope="col">Description</th>
-								 <th scope="col">Montant</th>
+								 <th scope="col" class="alignRight">Montant</th>
 						 </tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>IRC</td>
-								<td>426.20</td>
+								<td class="alignRight">426,20</td>
 							</tr>
 							<tr>
 								<td>RPC</td>
-								<td>51.62</td>
+								<td class="alignRight">51,62</td>
 							</tr>
 							<tr>
 								<td>AE</td>
-								<td>43.30</td>
+								<td class="alignRight">43,30</td>
 							</tr>
 							<tr>
 								<td>IRQ</td>
-								<td>120.00</td>
+								<td class="alignRight">120,00</td>
 							</tr>
 							<tr>
 								<td>RRQ</td>
-								<td>-</td>
+								<td class="alignRight">-</td>
 							</tr>
 							<tr>
 								<td>QPIP</td>
-								<td>-</td>
+								<td class="alignRight">-</td>
 							</tr>
 							<tr>
 								<td>-</td>
-								<td>-</td>
+								<td class="alignRight">-</td>
 							</tr>
 							<tr>
 								<th scope="row" id="taxes-total">Total</th>
-								<td headers="taxes-total">641.12</td>
+								<td class="alignRight" headers="taxes-total">641,12</td>
 							</tr>
 						</tbody>
 					</table>
@@ -297,37 +297,37 @@
 		<div class="row paystub-buffer">
 			<div class="col-md-4">
 
-				<div class="paystub-table paystub-theme-b">
-					<div class="paystub-title">Revenues avant impôt</div>
-					<table class="table">
+				<div class="paystub-table paystub-theme-c">
+					<div class="paystub-title"><strong>Revenues avant impôt</strong></div>
+					<table class="table table-striped">
 						<caption class="wb-inv">Section Retenues avant impôts d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
 						<thead>
 							<tr>
 								 <th scope="col">Description</th>
 								 <th scope="col">Description</th>
-								 <th scope="col" id="beforeTax-amount">Montant</th>
+								 <th class="alignRight" scope="col" id="beforeTax-amount">Montant</th>
 						 </tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>Cot. - All fonction pub Can</td>
 								<td>644</td>
-								<td>44.46</td>
+								<td class="alignRight">44,46</td>
 							</tr>
 							<tr>
 								<td>PSSA - Group 2 - Low</td>
 								<td>5G2</td>
-								<td>307.78</td>
+								<td class="alignRight">307,78</td>
 							</tr>
 							<tr>
 								<td>-</td>
 								<td>-</td>
-								<td>-</td>
+								<td class="alignRight">-</td>
 							</tr>
 							<tr>
 								<th scope="row" id="beforeTax-total">Total:</th>
 								<td>-</td>
-								<td headers="beforeTax-total beforeTax-amount">352.24</td>
+								<td headers="beforeTax-total beforeTax-amount">352,24</td>
 							</tr>
 						</tbody>
 					</table>
@@ -336,37 +336,37 @@
 			</div>
 			<div class="col-md-4">
 
-				<div class="paystub-table paystub-theme-b">
-					<div class="paystub-title">Retenues après impôt</div>
-					<table class="table">
+				<div class="paystub-table paystub-theme-c">
+					<div class="paystub-title"><strong>Retenues après impôt</strong></div>
+					<table class="table table-striped">
 						<caption class="wb-inv">Section Retenues après impôts d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
 						<thead>
 							<tr>
 								 <th scope="col">Description</th>
 								 <th scope="col">Description</th>
-								 <th scope="col" id="afterTax-amount">Montant</th>
+								 <th scope="col" class="alignRight" id="afterTax-amount">Montant</th>
 						 </tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>RSSFP</td>
 								<td>703</td>
-								<td>1.93</td>
+								<td class="alignRight">1,93</td>
 							</tr>
 							<tr>
 								<td>Prestation supp. Décès</td>
 								<td>589</td>
-								<td>11.21</td>
+								<td class="alignRight">11,21</td>
 							</tr>
 							<tr>
 								<td>Assurance-invalidité</td>
 								<td>751</td>
-								<td>10.77</td>
+								<td class="alignRight">10,77</td>
 							</tr>
 							<tr>
 								<th scope="row" id="afterTax-total">Total:</th>
 								<td>-</td>
-								<td headers="afterTax-total afterTax-amount">23.91</td>
+								<td class="alignRight" headers="afterTax-total afterTax-amount">23,91</td>
 							</tr>
 						</tbody>
 					</table>
@@ -375,44 +375,44 @@
 			</div>
 			<div class="col-md-4">
 
-				<div class="paystub-table paystub-theme-b">
-					<div class="paystub-title">Cotisations employeur</div>
-					<table class="table">
+				<div class="paystub-table paystub-theme-c">
+					<div class="paystub-title"><strong>Cotisations employeur</strong></div>
+					<table class="table table-striped">
 						<caption class="wb-inv">Section Cotisations employeur d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
 						<thead>
 							<tr>
 								 <th scope="col">Description</th>
-								 <th scope="col" id="empPaiBen-amount">Montant</th>
+								 <th scope="col" class="alignRight" id="empPaiBen-amount">Montant</th>
 						 </tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>RSSFP - Niveau II</td>
-								<td>63.78</td>
+								<td class="alignRight">63,78</td>
 							</tr>
 							<tr>
 								<td>RSDFP-AFPC</td>
-								<td>37.93</td>
+								<td class="alignRight">37,93</td>
 							</tr>
 							<tr>
 								<td>Prestation Suppl Décès - Manitoba</td>
-								<td>2.84</td>
+								<td class="alignRight">2,84</td>
 							</tr>
 							<tr>
 								<td>Assurance-invalidité</td>
-								<td>62.68</td>
+								<td class="alignRight">62,68</td>
 							</tr>
 							<tr>
 								<td>2 Grp 1 - Bas &lt; 35 ans</td>
-								<td>268.66</td>
+								<td class="alignRight">268,66</td>
 							</tr>
 							<tr>
 								<td>-</td>
-								<td>-</td>
+								<td class="alignRight">-</td>
 							</tr>
 							<tr>
 								<td>* Imposable</td>
-								<td>-</td>
+								<td class="alignRight">-</td>
 							</tr>
 							<tr>
 								<th scope="row" id="empPaiBen-total">Total:</th>
@@ -427,26 +427,26 @@
 		<div class="row paystub-buffer">
 			<div class="col-md-12">
 
-				<div class="paystub-table paystub-theme-b">
-					<div class="paystub-title">Répartition revenu net</div>
+				<div class="paystub-table paystub-theme-c">
+					<div class="paystub-title"><strong>Répartition revenu net</strong></div>
 					<table class="table">
 						<caption class="wb-inv"></caption>
 						<thead>
 							<tr>
 								 <th scope="col">Type paiement</th>
-								 <th scope="col">Numéro chèque paie</th>
-								 <th scope="col">Type compte</th>
-								 <th scope="col">Numéro compte</th>
-								 <th scope="col">Montant</th>
+								 <th scope="col" class="alignRight">Numéro chèque paie</th>
+								 <th scope="col" class="alignRight">Type compte</th>
+								 <th scope="col" class="alignRight">Numéro compte</th>
+								 <th scope="col" class="alignRight">Montant</th>
 						 </tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>Dépôt direct</td>
-								<td>12345678</td>
-								<td>Compte chèque/épargne</td>
-								<td>1234567</td>
-								<td>1,632.77</td>
+								<td class="alignRight">12345678</td>
+								<td class="alignRight">Compte chèque/épargne</td>
+								<td class="alignRight">1234567</td>
+								<td class="alignRight">1 632,77</td>
 							</tr>
 						</tbody>
 					</table>

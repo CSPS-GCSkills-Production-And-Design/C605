@@ -789,6 +789,25 @@ main {
   .paystub-table.paystub-theme-b table thead tr th:last-child, .paystub-table.paystub-theme-b table tbody tr td:last-child {
     text-align: right; }
 
+.paystub-table.paystub-theme-c {
+  border: 1px solid #ddd; }
+  .paystub-table.paystub-theme-c .paystub-title {
+    background-color: #7fa4c0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    padding: 2px 8px; }
+  .paystub-table.paystub-theme-c table {
+    margin-bottom: 0; }
+    .paystub-table.paystub-theme-c table thead {
+      background-color: #dfe6ee;
+      color: #6f8eab; }
+    .paystub-table.paystub-theme-c table th, .paystub-table.paystub-theme-c table td {
+      padding: 8px;
+      vertical-align: middle; }
+    .paystub-table.paystub-theme-c table tfoot {
+      font-size: 0.8em; }
+
 .paystub-row {
   align-items: center;
   border: 3px solid #4bacc6;

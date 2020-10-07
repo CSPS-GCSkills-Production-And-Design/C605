@@ -167,6 +167,34 @@ $themeA_border: 3px solid black;
 	}
 }
 
+//$themeC_tableCellPadd: 8px;
+
+.paystub-table.paystub-theme-c {
+	border:1px solid #ddd;
+
+	.paystub-title {
+		background-color: #7fa4c0;
+		border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+		color: white;
+		padding: 2px 8px;
+	}
+	table {
+		margin-bottom: 0;
+		thead {
+			background-color: #dfe6ee; //#7fa4c0
+			color: #6f8eab;
+		}
+		th, td {
+			padding: 8px;
+			vertical-align: middle;
+		}
+		tfoot {
+			font-size:0.8em;
+		}
+	}
+}
+
 //Paystub row
 .paystub-row {
 	align-items: center;
