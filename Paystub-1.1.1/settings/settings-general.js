@@ -2,7 +2,7 @@
 
 define({
   debugMode: false,
-  enableAdminMode: false,
+  enableAdminMode: true,
 
   contentContainer: "#dynamic_content",
 
@@ -15,9 +15,9 @@ define({
   courseTitle_en: "Demystifying Your Pay Stubs",
   courseTitle_fr: "Démystifier vos talons de paye",
   courseSubtitle_en: "",
-  courseSubtitle_fr: "",
+  courseSubtitle_fr: "Démystifier vos talons de paye",
   seriesTitle_en: "",
-  seriesTitle_fr: "",
+  seriesTitle_fr: "Démystifier vos talons de paye",
 
   /*------------------ Toolbar -----------------*/
   showLangSwitch: true,
