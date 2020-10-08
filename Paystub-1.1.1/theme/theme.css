@@ -63,13 +63,8 @@ html {
   padding: 0px; }
 
 body {
-  font-family: "open sans", "Segoe UI", "Arial";
-  background-image: url("../content/medias/images/setction0_bg.png");
-  background-size: cover;
-  background-position: 0px calc(45px + 42px);
-  background-attachment: fixed;
   background-color: white;
-  background-repeat: no-repeat; }
+  font-family: "open sans", "Segoe UI", "Arial"; }
 
 #wb-tphp {
   left: -200px; }
@@ -95,7 +90,6 @@ body {
 header #wb-sm {
   z-index: 999;
   border-top: 1px solid #bebebe;
-  border-bottom: 1px solid #bebebe;
   height: 42px;
   position: fixed;
   width: 100%;
@@ -151,8 +145,7 @@ header #wb-sm {
 
 main {
   z-index: 0;
-  padding-top: calc(45px + 42px);
-  background-color: rgba(230, 230, 230, 0); }
+  padding-top: calc(45px + 42px); }
 
 #dynamic_content {
   font-size: 1.3em;
@@ -445,233 +438,6 @@ main {
 .fixed-height-debug {
   height: 288px; }
 
-/* CSS Document */
-#dynamic_content .maincolor a:link, #dynamic_content .othercolor a:link, #dynamic_content .fn-lnk a:link {
-  color: white;
-  text-decoration: underline; }
-#dynamic_content .maincolor a:active, #dynamic_content .othercolor a:active, #dynamic_content .fn-lnk a:active {
-  color: white;
-  text-decoration: underline; }
-#dynamic_content .maincolor a:hover, #dynamic_content .othercolor a:hover, #dynamic_content .fn-lnk a:hover {
-  color: white;
-  text-decoration: underline; }
-#dynamic_content .maincolor a:visited, #dynamic_content .othercolor a:visited, #dynamic_content .fn-lnk a:visited {
-  color: white;
-  text-decoration: underline; }
-
-#dynamic_content .bgcolor a:link {
-  color: blue; }
-#dynamic_content .bgcolor a:active {
-  color: blue; }
-#dynamic_content .bgcolor a:hover {
-  color: blue; }
-
-#dynamic_content .bgcolor {
-  background-color: white;
-  color: black; }
-  #dynamic_content .bgcolor h1, #dynamic_content .bgcolor h2 {
-    font-size: 1.4em;
-    padding: 12px;
-    color: white;
-    background-color: #2f7f96;
-    margin-bottom: 25px;
-    display: inline-block; }
-  #dynamic_content .bgcolor h3, #dynamic_content .bgcolor h4, #dynamic_content .bgcolor h5, #dynamic_content .bgcolor h6 {
-    font-size: 1.2em; }
-#dynamic_content .maincolor {
-  background-color: #2f7f96;
-  color: white; }
-  #dynamic_content .maincolor h1, #dynamic_content .maincolor h2, #dynamic_content .maincolor h3 {
-    font-size: 1.4em;
-    padding: 12px;
-    color: white;
-    background-color: #235e6f;
-    margin-bottom: 25px;
-    display: inline-block; }
-  #dynamic_content .maincolor h4, #dynamic_content .maincolor h5, #dynamic_content .maincolor h6 {
-    font-size: 1.1em; }
-#dynamic_content .othercolor {
-  background-color: rgba(34, 30, 32, 0.76);
-  color: white; }
-  #dynamic_content .othercolor h1 {
-    font-size: 2.0em; }
-  #dynamic_content .othercolor h2 {
-    font-size: 1.5em; }
-  #dynamic_content .othercolor h3 {
-    font-size: 1.3em; }
-  #dynamic_content .othercolor h4, #dynamic_content .othercolor h5, #dynamic_content .othercolor h6 {
-    font-size: 1.1em; }
-#dynamic_content .MeD_arrowBox_top.othercolor {
-  background-color: rgba(0, 0, 0, 0); }
-  #dynamic_content .MeD_arrowBox_top.othercolor div {
-    background-color: rgba(34, 30, 32, 0.76);
-    color: white; }
-  #dynamic_content .MeD_arrowBox_top.othercolor:after {
-    border-bottom-color: rgba(34, 30, 32, 0.76); }
-#dynamic_content .ribbon_quiz .btn-default {
-  border-radius: 8px;
-  color: #2f7f96;
-  background-color: #fff;
-  border-color: #2f7f96; }
-  #dynamic_content .ribbon_quiz .btn-default:hover {
-    color: #fff;
-    background-color: #4f4f4f;
-    border-color: #bbbfc5; }
-#dynamic_content .fn-lnk {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgba(0, 0, 0, 0);
-  color: white; }
-
-.MeD_call_out {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: white; }
-
-.MeD_note_cyan {
-  color: #222222;
-  padding-left: 70px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: url("../theme/base/Information mini.png") no-repeat 0 0/100% auto;
-  background-size: 40px auto;
-  background-position: 13px 28px;
-  border-left: 3px solid #2f7f96;
-  background-color: #5eb4cd; }
-  .MeD_note_cyan a {
-    color: black !important; }
-  .MeD_note_cyan p:last-of-type {
-    margin-bottom: 3px; }
-
-.MeD_note_orange {
-  color: #222222;
-  padding-left: 70px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: url("../theme/base/Nice to Know mini ORANGE.png") no-repeat 0 0/100% auto;
-  background-size: 40px auto;
-  background-position: 13px 28px;
-  border-left: 3px solid #0a1c22;
-  background-color: #235e6f;
-  color: white; }
-
-.MeD_note_orange p:last-of-type {
-  margin-bottom: 3px; }
-
-.paddingBox {
-  padding: 15px;
-  margin-bottom: 15px; }
-
-.lightbulb {
-  padding-left: 70px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: url("../theme/base/lightbulb.png") no-repeat 0 0/100% auto;
-  background-size: 40px auto;
-  background-position: 13px 28px;
-  border-left: 3px solid white; }
-
-.lightbulb p:last-of-type {
-  margin-bottom: 3px; }
-
-.orangebox {
-  background-color: #2f7f96;
-  border: 3px solid #0a1c22;
-  color: black;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top: 30px; }
-
-.MeD_arrowBox_top {
-  margin-top: 25px; }
-  .MeD_arrowBox_top div {
-    padding: 20px;
-    background: red; }
-  .MeD_arrowBox_top p:last-of-type {
-    margin-bottom: 0px; }
-  .MeD_arrowBox_top:after {
-    bottom: 100%;
-    left: 50%;
-    margin-left: -25px;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(0, 0, 0, 0);
-    border-width: 25px; }
-
-.MeD_arrowBox_left {
-  margin-left: 13px; }
-  .MeD_arrowBox_left div {
-    background: red;
-    padding: 20px; }
-  .MeD_arrowBox_left h1 {
-    border-bottom: 1px solid black;
-    padding-bottom: 15px !important;
-    margin-bottom: 9px !important;
-    margin-top: -6px !important; }
-  .MeD_arrowBox_left p:last-of-type {
-    margin-bottom: 0px; }
-  .MeD_arrowBox_left:after {
-    right: 100%;
-    top: 50%;
-    margin-top: -25px;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(0, 0, 0, 0);
-    border-width: 25px; }
-
-.MeD_arrowBox_right {
-  margin-right: -16px; }
-  .MeD_arrowBox_right div {
-    background: red;
-    padding: 20px; }
-  .MeD_arrowBox_right h1 {
-    border-bottom: 1px solid black;
-    padding-bottom: 15px !important;
-    margin-bottom: 9px !important;
-    margin-top: -6px !important; }
-  .MeD_arrowBox_right p:last-of-type {
-    margin-bottom: 0px; }
-  .MeD_arrowBox_right:after {
-    left: 100%;
-    top: 50%;
-    margin-top: -25px;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(0, 0, 0, 0);
-    border-width: 25px; }
-
-.trangleDown {
-  width: 400px;
-  height: 400px;
-  background-color: red;
-  top: 50%;
-  left: 100%;
-  margin-left: -25px;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: #2f7f96;
-  border-width: 25px; }
-
 .fakelink {
   color: black;
   text-decoration: underline; }
@@ -851,199 +617,430 @@ main {
   .paystub-row.paystub-theme-b :first-child {
     width: 40%; }
 
-#dynamic_content header.container-fluid {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  min-height: 300px;
-  background-color: #2f7f96;
-  background-image: url("../content/medias/images/TileBackground.png");
-  background-size: 25%;
-  background-repeat: repeat;
-  border-bottom: 2px solid #173d48;
-  color: white; }
-  #dynamic_content header.container-fluid img {
-    height: 250px; }
-#dynamic_content .container {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding: 81px; }
-#dynamic_content .container-fluid {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 0px;
-  padding-right: 0px; }
-  #dynamic_content .container-fluid .container {
-    padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px; }
-    #dynamic_content .container-fluid .container .paystub-buffer {
-      margin-top: 80px; }
-#dynamic_content .objective-circles {
-  display: flex;
-  justify-content: space-around; }
-  #dynamic_content .objective-circles .module-title:first-of-type.active, #dynamic_content .objective-circles .module-title:first-of-type.complete {
-    background-color: #887b07; }
-  #dynamic_content .objective-circles .module-title:nth-of-type(2).active, #dynamic_content .objective-circles .module-title:nth-of-type(2).complete {
-    background-color: #e4562b; }
-  #dynamic_content .objective-circles .module-title:nth-of-type(3).active, #dynamic_content .objective-circles .module-title:nth-of-type(3).complete {
-    background-color: #996f4b; }
-  #dynamic_content .objective-circles .module-title {
-    background-color: rgba(0, 0, 0, 0);
-    border: 6px solid rgba(255, 255, 255, 0.7);
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1.5em !important;
-    width: 210px !important;
-    height: 210px !important;
-    border-radius: 600px;
-    line-height: 38px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 0px !important;
-    padding: 10px !important; }
-  #dynamic_content .objective-circles .module-title.active {
-    border: 6px solid white;
-    color: white; }
-  #dynamic_content .objective-circles .module-title.complete {
-    background-image: url(../content/medias/images/Checkmark.svg);
-    background-size: 73%;
-    background-repeat: no-repeat;
-    background-position: 21px 34px;
-    border: 6px solid white;
-    color: white; }
-#dynamic_content .objective-subtitle {
-  display: flex;
-  justify-content: space-around; }
-  #dynamic_content .objective-subtitle .subText {
-    width: 200px;
-    font-weight: 600;
-    font-size: 1.3em !important;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    color: white; }
-  #dynamic_content .objective-subtitle .active {
-    font-weight: bold !important; }
-#dynamic_content .checklist ul {
-  list-style-image: url(../content/medias/images/check.PNG);
-  margin-bottom: 80px;
-  margin-left: 24px; }
-  #dynamic_content .checklist ul li {
-    margin: 0;
-    padding: 0; }
-#dynamic_content .objective_accordion {
-  text-decoration: none; }
-  #dynamic_content .objective_accordion summary {
-    border-radius: 0px;
-    border: none;
-    font-weight: bold;
-    background-color: #2f7f96;
-    color: white; }
-  #dynamic_content .objective_accordion details {
-    border-radius: 0px;
-    border: none;
-    background-color: white;
-    color: black; }
-    #dynamic_content .objective_accordion details p {
-      margin-top: 22px;
-      margin-left: 5px; }
-    #dynamic_content .objective_accordion details ul {
-      margin-bottom: 12px !important;
-      margin-top: 0px; }
-    #dynamic_content .objective_accordion details li:last-of-type {
-      margin-bottom: -12px !important; }
-#dynamic_content .wb-tabs.carousel-s1 ul {
-  margin: 0px; }
-#dynamic_content .wb-tabs.carousel-s1 li {
-  margin-bottom: 0px; }
-#dynamic_content .wb-tabs.carousel-s1 figcaption {
-  background-color: #2f7f96; }
-#dynamic_content .wb-tabs.carousel-s1 a {
-  color: white; }
-#dynamic_content .wb-tabs.carousel-s1 .glyphicon {
-  color: black; }
-#dynamic_content .screenshot_nav {
-  position: relative; }
-  #dynamic_content .screenshot_nav a {
-    color: black; }
-    #dynamic_content .screenshot_nav a:visited {
-      color: black; }
-    #dynamic_content .screenshot_nav a:hover, #dynamic_content .screenshot_nav a:focus {
-      text-decoration: underline; }
-    #dynamic_content .screenshot_nav a.external::after {
-      background: url("base/icon_external_link.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 15px;
-      height: 15px;
-      content: "";
-      display: inline-block;
-      margin-left: 3px; }
-#dynamic_content .mySlides img {
+#dynamic_content > header {
+  margin-bottom: 45px;
+  margin-top: 25px;
+  padding: 0;
   width: 100%; }
-#dynamic_content .imagebuttonleft,
-#dynamic_content .imagebuttonright {
-  cursor: pointer;
-  position: absolute;
-  top: 68%;
-  width: auto;
-  padding: 16px;
-  font-weight: bold;
-  font-size: 3em;
-  transition: 0.6s ease;
-  border-radius: 0 29px 29px 0;
-  user-select: none;
-  color: #235e6f;
-  border: 0;
-  background-color: rgba(0, 0, 0, 0.15); }
-#dynamic_content .imagebuttonright {
-  right: 8%;
-  border-radius: 29px 0 0 29px; }
-#dynamic_content .imagebuttonleft:hover,
-#dynamic_content .imagebuttonright:hover {
-  background-color: rgba(34, 30, 32, 0.76);
-  color: #235e6f; }
-#dynamic_content .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #235e6f;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  position: relative;
-  align-content: center; }
-  #dynamic_content .dot:hover {
-    background-color: #0a1c22; }
-#dynamic_content .dot.active {
-  background-color: #2f7f96; }
-#dynamic_content .text {
-  border: 1px solid black;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.63);
-  color: black;
-  font-size: 0.75em;
-  padding: 5px 15px;
-  left: 50%;
-  bottom: 1%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); }
-#dynamic_content .tablecompare {
-  color: black;
-  text-align: left; }
-  #dynamic_content .tablecompare th,
-  #dynamic_content .tablecompare td {
-    min-width: 50%;
-    border: 1px solid #2f7f96;
-    padding: 17px; }
-  #dynamic_content .tablecompare thead > tr:first-of-type {
-    background: #2f7f96;
+
+.nav-theme-a {
+  width: 100%; }
+  .nav-theme-a ul {
+    display: table;
+    margin: 0 !important;
+    width: 100%; }
+    .nav-theme-a ul :nth-child(1) a {
+      background-color: #12747B; }
+    .nav-theme-a ul :nth-child(2) a {
+      background-color: #CA6748; }
+    .nav-theme-a ul :nth-child(3) a {
+      background-color: #2B5B69; }
+    .nav-theme-a ul :nth-child(4) a {
+      background-color: #40ABAE; }
+  .nav-theme-a li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+  .nav-theme-a a {
     color: white;
-    font-weight: bold; }
-  #dynamic_content .tablecompare tbody > tr:nth-child(even) {
-    background: white; }
-  #dynamic_content .tablecompare tbody > tr:nth-child(odd) {
-    background: #ebebeb; }
+    display: block;
+    font-weight: bold;
+    padding: 4px;
+    text-decoration: none; }
+
+.content-theme-a {
+  padding: 40px; }
+  .content-theme-a .content-row {
+    align-items: center;
+    display: flex;
+    margin-bottom: 40px; }
+    .content-theme-a .content-row:last-child {
+      margin-bottom: 0; }
+  .content-theme-a .content-row > * {
+    vertical-align: middle; }
+  .content-theme-a .icon {
+    max-width: 30px; }
+  .content-theme-a .spacer {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 84px;
+    position: relative; }
+    .content-theme-a .spacer:before {
+      background-color: #707070;
+      content: "";
+      height: 1px;
+      left: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%; }
+    .content-theme-a .spacer:after {
+      background-color: #707070;
+      content: "";
+      height: 67px;
+      position: absolute;
+      right: -1px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px; }
+  .content-theme-a p {
+    margin: 0 !important; }
+
+@media (max-width: 992px) {
+  main {
+    padding-top: 0; } }
+/* #dynamic_content {
+
+    // ******************************************************
+    //  Page Header Banner
+    // ******************************************************
+
+    $headermargin: 60px;
+    $sectionmargin: 100px;
+    $containerpadding: 81px;
+
+    header.container-fluid {
+        padding-top: $headermargin;
+        padding-bottom: $headermargin;
+        min-height: 300px;
+
+        background-color: $bannercolor;
+        background-image: url("../content/medias/images/TileBackground.png");
+        background-size: 25%;
+        background-repeat: repeat;
+        border-bottom: $bannerborderheight solid $bannerbordercolor;
+
+        img {
+            height: 250px;
+        }
+
+        color:white;
+    }
+
+    // ******************************************************
+    //  Page Content containers
+    // ******************************************************
+
+    .container {
+        margin-top: $sectionmargin;
+        margin-bottom: $sectionmargin;
+
+        padding: $containerpadding;
+    }
+
+    .container-fluid {
+        padding-top: $sectionmargin;
+        padding-bottom: $sectionmargin;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        .container {
+            padding: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+            .paystub-buffer {
+                margin-top: 80px;
+            }
+        }
+    }
+
+    // ******************************************************
+    //  Module Objective Banner
+    // ******************************************************
+
+    .objective-circles {
+        display: flex;
+        justify-content: space-around;
+
+        .module-title:first-of-type {
+
+            &.active,
+            &.complete {
+                background-color: $objective-circle-1;
+            }
+        }
+
+        .module-title:nth-of-type(2) {
+
+            &.active,
+            &.complete {
+                background-color: $objective-circle-2;
+            }
+        }
+
+        .module-title:nth-of-type(3) {
+
+            &.active,
+            &.complete {
+                background-color: $objective-circle-3;
+            }
+        }
+
+        .module-title {
+            background-color: $nocolor;
+            border: 6px solid transparentize($bannercolor_text, 0.3);
+            color: transparentize($bannercolor_text, 0.3);
+
+            font-size: 1.5em !important;
+            width: 210px !important;
+            height: 210px !important;
+            border-radius: 600px;
+            line-height: 38px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            margin: 0px !important;
+            padding: 10px !important;
+        }
+
+        .module-title.active {
+            border: 6px solid $bannercolor_text;
+            color: $bannercolor_text;
+        }
+
+        .module-title.complete {
+            background-image: url(../content/medias/images/Checkmark.svg);
+            background-size: 73%;
+            background-repeat: no-repeat;
+            background-position: 21px 34px;
+            border: 6px solid white;
+            color: $lightcolor2_text;
+        }
+    }
+
+    .objective-subtitle {
+        display: flex;
+        justify-content: space-around;
+
+        .subText {
+            width: 200px;
+            font-weight: 600;
+            font-size: 1.3em !important;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            color: white;
+        }
+
+        .active {
+            font-weight: bold !important;
+        }
+    }
+
+    .checklist ul {
+        list-style-image: url(../content/medias/images/check.PNG);
+        margin-bottom: 80px;
+        margin-left: 24px;
+
+        li {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    // **********************************************************
+    //
+    //	COMPONENTS
+    //
+    // **********************************************************
+
+    // ******************************************************
+    // 	Accordion
+    // ******************************************************
+    .objective_accordion {
+        text-decoration: none;
+
+        summary {
+            border-radius: 0px;
+            border: none;
+            font-weight: bold;
+            background-color: $MeD_main_color_2;
+            color: $bannercolor_text;
+        }
+
+        details {
+            border-radius: 0px;
+            border: none;
+            background-color: $background_alternate;
+            color: $maincolor1_text;
+
+            p {
+                margin-top: 22px;
+                margin-left: 5px;
+            }
+
+            ul {
+                margin-bottom: 12px !important;
+                margin-top: 0px;
+            }
+
+            li:last-of-type {
+                margin-bottom: -12px !important;
+            }
+        }
+    }
+
+    // ******************************************************
+    //  Carousel Styling/Formatting
+    // ******************************************************
+    .wb-tabs.carousel-s1 {
+        ul {
+            margin: 0px;
+        }
+
+        li {
+            margin-bottom: 0px;
+        }
+
+        figcaption {
+            background-color: $MeD_main_color_2;
+        }
+
+        a {
+            color: $lightLinkColor;
+        }
+
+        .glyphicon {
+            color: black;
+        }
+    }
+
+    // ******************************************************
+    // 	Image slider
+    // ******************************************************
+    .screenshot_nav {
+        position: relative;
+
+        a {
+            color: black;
+
+            &:visited {
+                color: black;
+            }
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+
+            &.external::after {
+                background: url("base/icon_external_link.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 15px;
+                height: 15px;
+                content: "";
+                display: inline-block;
+                margin-left: 3px;
+            }
+        }
+    }
+
+    .mySlides {
+        img {
+            width: 100%;
+        }
+    }
+
+    .imagebuttonleft,
+    .imagebuttonright {
+        cursor: pointer;
+        position: absolute;
+        top: 68%;
+        width: auto;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 3em;
+        transition: 0.6s ease;
+        border-radius: 0 29px 29px 0;
+        user-select: none;
+        color: $MeD_secondary_color_2;
+        border: 0;
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .imagebuttonright {
+        right: 8%;
+        border-radius: 29px 0 0 29px;
+    }
+
+    .imagebuttonleft:hover,
+    .imagebuttonright:hover {
+        background-color: $MeD_other_color_3;
+        color: $MeD_secondary_color_2;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: $MeD_secondary_color_2;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        position: relative;
+        align-content: center;
+
+        &:hover {
+            background-color: $MeD_secondary_color_3;
+        }
+    }
+
+    .dot.active {
+        background-color: $lightcolor2;
+    }
+
+    .text {
+        border: 1px solid black;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.63);
+        color: black;
+        font-size: 0.75em;
+        padding: 5px 15px;
+        left: 50%;
+        bottom: 1%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    // ******************************************************
+    // CSS for Comparison table on slide m3-1
+    // ******************************************************
+
+    .tablecompare {
+        color: black;
+        text-align: left;
+
+        th,
+        td {
+            min-width: 50%;
+            border: 1px solid $MeD_main_color_2;
+            padding: 17px;
+        }
+
+        thead {
+            &>tr:first-of-type {
+                background: $lightcolor2;
+                color: white;
+                font-weight: bold;
+            }
+        }
+
+        tbody {
+            &>tr:nth-child(even) {
+                background: $MeD_mainbg_color;
+            }
+
+            &>tr:nth-child(odd) {
+                background: darken($MeD_mainbg_color, 8%);
+            }
+        }
+    }
+} */
 
 /*# sourceMappingURL=theme.css.map */

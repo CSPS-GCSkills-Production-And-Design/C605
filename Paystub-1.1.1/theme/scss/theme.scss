@@ -9,11 +9,127 @@
 
 @import "./_MeD_template"; //Template overrides of SNAP
 @import "./_MeD_css_utilities"; //for extra features re-usable on any object
-@import "./_MeD_color_applicator"; //styles for easy application of colors to any object
-@import "./_MeD_special_boxes"; //styles for information / GoTo / Go Deeper boxes
+// @import "./_MeD_color_applicator"; //styles for easy application of colors to any object
+// @import "./_MeD_special_boxes"; //styles for information / GoTo / Go Deeper boxes
 @import "./_MeD_paystubs"; //styles for information / GoTo / Go Deeper boxes
 
+$lessonA_colorScheme: #12747B;
+$lessonB_colorScheme: #CA6748;
+$lessonC_colorScheme: #2B5B69;
+$lessonD_colorScheme: #40ABAE;
+
 #dynamic_content {
+  > header {
+    margin-bottom:45px;
+    margin-top:25px;
+    padding:0;
+    width:100%;
+  }
+}
+
+.nav-theme-a {
+  width:100%;
+  ul {
+    display:table;
+    margin:0 !important;
+    width:100%;
+
+    :nth-child(1) a {
+      background-color:$lessonA_colorScheme;
+    }
+    :nth-child(2) a {
+      background-color:$lessonB_colorScheme;
+    }
+    :nth-child(3) a {
+      background-color:$lessonC_colorScheme;
+    }
+    :nth-child(4) a {
+      background-color:$lessonD_colorScheme;
+    }
+  }
+  li {
+    display:table-cell;
+    text-align:center;
+    vertical-align: middle;
+  }
+  a {
+    color:white;
+    display:block;
+    font-weight:bold;
+    padding:4px;
+    text-decoration:none;
+  }
+}
+
+.content-block {
+
+}
+
+.content-theme-a {
+  padding:40px;
+  .content-row {
+    align-items: center;
+    display:flex;
+    margin-bottom:40px;
+    &:last-child {
+      margin-bottom:0;
+    }
+  }
+  .content-row > * {
+    //display:table-cell;
+
+    vertical-align:middle;
+  }
+  .icon {
+    max-width:30px;
+    //width: 65px;
+    //position:relative;
+    img {
+      //width:100%;
+    }
+  }
+  .spacer {
+    margin-left:20px;
+    margin-right:20px;
+    max-width:84px;
+    position:relative;
+    &:before {
+      background-color: #707070;
+      content:"";
+      height: 1px;
+      left:0;
+      margin-left:10px;
+      margin-right:10px;
+      position:absolute;
+      top:50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+    &:after {
+      background-color: #707070;
+      content:"";
+      height:67px;
+      position:absolute;
+      right:-1px;
+      top: 50%;
+      transform: translateY(-50%);
+      width:1px;
+    }
+  }
+  p {margin:0 !important;}
+}
+
+.content-theme-b {
+
+}
+
+@media (max-width: 992px) {
+  main {
+    padding-top:0;
+  }
+}
+
+/* #dynamic_content {
 
     // ******************************************************
     //  Page Header Banner
@@ -363,4 +479,4 @@
             }
         }
     }
-}
+} */
