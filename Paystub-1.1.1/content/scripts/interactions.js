@@ -24,7 +24,7 @@ define([
 	}
 
 	/* is called on every page load, great for adding custom code to all pages*/
-	// function pageLoaded() {
+	 function pageLoaded() {
 	
 	
 	// 	//-----------------------------------------------------------------------------------------------------
@@ -289,7 +289,7 @@ define([
 	// 	scanheaders();
 		
 		
-	// }
+	}
 
 	initialize();
 
