@@ -184,6 +184,18 @@ main {
 .mt25 {
   margin-top: 25px; }
 
+.mb25 {
+  margin-bottom: 25px !important; }
+
+.mb50 {
+  margin-bottom: 50px !important; }
+
+.mt50 {
+  margin-top: 50px !important; }
+
+.mw100 {
+  max-width: 100%; }
+
 .top-buffer {
   margin-top: 35px; }
 
@@ -536,7 +548,10 @@ main {
 .paystub-table {
   background-color: white;
   border: 3px solid black;
-  color: black; }
+  color: black;
+  margin-bottom: 60px; }
+  .paystub-table:last-child {
+    margin-bottom: 40px; }
   .paystub-table table {
     background-color: white; }
   .paystub-table table.table-borderless td, .paystub-table table.table-borderless th {
@@ -594,7 +609,10 @@ main {
 .paystub-row {
   border: 3px solid #4bacc6;
   display: table;
+  margin-bottom: 60px;
   width: 100%; }
+  .paystub-row:last-child {
+    margin-bottom: 40px; }
   .paystub-row .paystub-col {
     display: table-cell;
     padding: 8px 12px;
@@ -630,13 +648,15 @@ main {
   .paystub-row.paystub-theme-b :first-child {
     width: 40%; }
 
+.color-theme-a {
+  color: #12747B; }
+
 main.container {
   margin: 0;
   padding: 0;
   width: 100%; }
 
 footer#wb-info {
-  margin-top: 0;
   margin-bottom: 40px; }
   footer#wb-info .container {
     padding-left: 15px;
@@ -654,18 +674,20 @@ footer#wb-info {
     display: table;
     margin: 0 !important;
     width: 100%; }
-    .nav-theme-a ul :nth-child(1) a {
-      background-color: #12747B; }
-    .nav-theme-a ul :nth-child(2) a {
-      background-color: #CA6748; }
-    .nav-theme-a ul :nth-child(3) a {
-      background-color: #2B5B69; }
-    .nav-theme-a ul :nth-child(4) a {
-      background-color: #40ABAE; }
-  .nav-theme-a li {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle; }
+    .nav-theme-a ul li {
+      background-color: #E2E2E2;
+      color: white;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+      .nav-theme-a ul li:nth-child(1).active a {
+        background-color: #12747B; }
+      .nav-theme-a ul li:nth-child(2).active a {
+        background-color: #CA6748; }
+      .nav-theme-a ul li:nth-child(3).active a {
+        background-color: #2B5B69; }
+      .nav-theme-a ul li:nth-child(4).active a {
+        background-color: #40ABAE; }
   .nav-theme-a a {
     color: white;
     display: block;
@@ -731,8 +753,7 @@ footer#wb-info {
     transform: translateY(-50%);
     width: 59px; }
   .content-theme-b p {
-    color: #3A3A3A;
-    margin: 0 !important; }
+    color: #3A3A3A; }
   .content-theme-b h3 {
     color: #3A3A3A; }
 
@@ -751,6 +772,10 @@ footer#wb-info {
       text-decoration: none; }
 
 @media (max-width: 992px) {
+  .breadcrumb {
+    margin-left: 0;
+    margin-right: 0; }
+
   main {
     padding-top: 0; }
 

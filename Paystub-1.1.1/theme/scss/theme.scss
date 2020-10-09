@@ -18,6 +18,8 @@ $lessonB_colorScheme: #CA6748;
 $lessonC_colorScheme: #2B5B69;
 $lessonD_colorScheme: #40ABAE;
 
+.color-theme-a {color:$lessonA_colorScheme;}
+
 main.container {
   margin:0;
   padding:0;
@@ -25,7 +27,7 @@ main.container {
 }
 
 footer#wb-info {
-  margin-top:0;
+  //margin-top:0;
   margin-bottom:40px;
   .container {
     padding-left:15px;
@@ -48,25 +50,27 @@ footer#wb-info {
     display:table;
     margin:0 !important;
     width:100%;
+    li {
+      background-color:#E2E2E2;
+      color:white;
+      display:table-cell;
+      text-align:center;
+      vertical-align: middle;
+      &:nth-child(1).active a {
+        background-color:$lessonA_colorScheme;
+      }
+      &:nth-child(2).active a {
+        background-color:$lessonB_colorScheme;
+      }
+      &:nth-child(3).active a {
+        background-color:$lessonC_colorScheme;
+      }
+      &:nth-child(4).active a {
+        background-color:$lessonD_colorScheme;
+      }
+    }
+  }
 
-    :nth-child(1) a {
-      background-color:$lessonA_colorScheme;
-    }
-    :nth-child(2) a {
-      background-color:$lessonB_colorScheme;
-    }
-    :nth-child(3) a {
-      background-color:$lessonC_colorScheme;
-    }
-    :nth-child(4) a {
-      background-color:$lessonD_colorScheme;
-    }
-  }
-  li {
-    display:table-cell;
-    text-align:center;
-    vertical-align: middle;
-  }
   a {
     color:white;
     display:block;
@@ -149,7 +153,7 @@ footer#wb-info {
   }
   p {
     color:#3A3A3A;
-    margin:0 !important;
+    //margin:0 !important;
   }
   h3 {
     color:#3A3A3A;
@@ -174,6 +178,10 @@ footer#wb-info {
 }
 
 @include breakpoint-lte(medium) {
+  .breadcrumb {
+    margin-left:0;
+    margin-right:0;
+  }
   main {
     padding-top:0;
   }
