@@ -648,8 +648,11 @@ main {
     padding: 4px;
     text-decoration: none; }
 
+.content-block {
+  position: relative; }
+
 .content-theme-a {
-  padding: 40px; }
+  padding: 60px 40px; }
   .content-theme-a .content-row {
     align-items: center;
     display: flex;
@@ -665,7 +668,7 @@ main {
     margin-right: 20px;
     max-width: 84px;
     position: relative; }
-    .content-theme-a .spacer:before {
+    .content-theme-a .spacer::before {
       background-color: #707070;
       content: "";
       height: 1px;
@@ -676,7 +679,7 @@ main {
       top: 50%;
       transform: translateY(-50%);
       width: 100%; }
-    .content-theme-a .spacer:after {
+    .content-theme-a .spacer::after {
       background-color: #707070;
       content: "";
       height: 67px;
@@ -687,6 +690,26 @@ main {
       width: 1px; }
   .content-theme-a p {
     margin: 0 !important; }
+
+.content-theme-b {
+  background-color: #FCE08D;
+  margin-bottom: 40px;
+  padding: 26px 60px; }
+  .content-theme-b::before {
+    background: url("../content/medias/images/ico_plus.png") center no-repeat;
+    content: "";
+    display: block;
+    height: 59px;
+    position: absolute;
+    left: -29.5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 59px; }
+  .content-theme-b p {
+    color: #3A3A3A;
+    margin: 0 !important; }
+  .content-theme-b h3 {
+    color: #3A3A3A; }
 
 @media (max-width: 992px) {
   main {

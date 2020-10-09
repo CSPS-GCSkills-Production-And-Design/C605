@@ -62,11 +62,11 @@ $lessonD_colorScheme: #40ABAE;
 }
 
 .content-block {
-
+  position:relative;
 }
 
 .content-theme-a {
-  padding:40px;
+  padding:60px 40px;
   .content-row {
     align-items: center;
     display:flex;
@@ -76,8 +76,6 @@ $lessonD_colorScheme: #40ABAE;
     }
   }
   .content-row > * {
-    //display:table-cell;
-
     vertical-align:middle;
   }
   .icon {
@@ -93,7 +91,7 @@ $lessonD_colorScheme: #40ABAE;
     margin-right:20px;
     max-width:84px;
     position:relative;
-    &:before {
+    &::before {
       background-color: #707070;
       content:"";
       height: 1px;
@@ -105,7 +103,7 @@ $lessonD_colorScheme: #40ABAE;
       transform: translateY(-50%);
       width: 100%;
     }
-    &:after {
+    &::after {
       background-color: #707070;
       content:"";
       height:67px;
@@ -120,7 +118,25 @@ $lessonD_colorScheme: #40ABAE;
 }
 
 .content-theme-b {
-
+  background-color:#FCE08D;
+  margin-bottom:40px;
+  padding:26px 60px;
+  &::before {
+    background: url("../content/medias/images/ico_plus.png") center no-repeat;
+    content:"";
+    display:block;
+    height:59px;
+    position:absolute;
+    left:-29.5px;
+    top:50%;
+    transform: translateY(-50%);
+    width:59px;
+  }
+  p {
+    color:#3A3A3A;
+    margin:0 !important;
+  }
+  h3 {color:#3A3A3A;}
 }
 
 @media (max-width: 992px) {
