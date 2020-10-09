@@ -617,6 +617,11 @@ main {
   .paystub-row.paystub-theme-b :first-child {
     width: 40%; }
 
+main.container {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
 #dynamic_content > header {
   margin-bottom: 45px;
   margin-top: 25px;
@@ -692,7 +697,7 @@ main {
     margin: 0 !important; }
 
 .content-theme-b {
-  background-color: #FCE08D;
+  background-color: #FFF9E8;
   margin-bottom: 40px;
   padding: 26px 60px; }
   .content-theme-b::before {
@@ -713,7 +718,10 @@ main {
 
 @media (max-width: 992px) {
   main {
-    padding-top: 0; } }
+    padding-top: 0; }
+
+  h2.series-title {
+    padding-left: 15px; } }
 /* #dynamic_content {
 
     // ******************************************************
