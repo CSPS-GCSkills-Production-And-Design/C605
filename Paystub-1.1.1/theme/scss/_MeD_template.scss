@@ -110,48 +110,74 @@ header {
 // 	BOTTOM CONTROL BAR
 // ******************************************************
 #wb-info {
-	background-color: $bannercolor;
-	background-image: url("../content/medias/images/TileBackground.png");
-	background-size: 25%;
-	background-repeat: repeat;
-	height: 85px;
-	padding-top: 20px;
-	margin-top: 0px;
-	border-top:$bannerborderheight solid $bannerbordercolor;
+	// background-color: $bannercolor;
+	// background-image: url("../content/medias/images/TileBackground.png");
+	// background-size: 25%;
+	// background-repeat: repeat;
+	// height: 85px;
+	// padding-top: 20px;
+	// margin-top: 0px;
+	// border-top:$bannerborderheight solid $bannerbordercolor;
 
 	a:active {
 		background-color: $MeD_secondary_color_2;
 	}
 
 	.backnext {
-		text-align: center;
-		font-size: 1.6em;
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 1em;
 		font-weight: 400;
+		text-align: center;
 	}
 
 	.back, .next
 	{
-		border-radius: 25px;
-		border: 1.5px solid white;
+		background-color:#40ABAE;
+		border-radius:50%;
+		height:14px;
+		overflow:hidden;
+		position:relative;
+		text-indent: 100%;
+		white-space: nowrap;
+		width:14px;
+		&.disabled {
+			background-color:#40ABAE !important;
+		}
 	}
 
 	.back {
-		&:before {
-			border: none;
+		&::before {
+			border-bottom: 3px solid transparent;
+			border-right: 6px solid white;
+			border-top: 3px solid transparent;
+			height: 0;
+			left:50%;
+			position:absolute;
+			top:50%;
+			transform: translate(-50%, -50%);
+			width: 0;
 		}
 	}
 
 	.next {
-		margin-left: 19px;
+		//margin-left: 19px;
 		&:after {
-			border: none;
+			border-bottom: 3px solid transparent;
+			border-left: 6px solid white;
+			border-top: 3px solid transparent;
+			height: 0;
+			left:50%;
+			position:absolute;
+			top:50%;
+			transform: translate(-50%, -50%);
+			width: 0;
 		}
 	}
 
 	.back.disabled, .next.disabled {
-		background-color: $footer-button-background-color-disabled;
-		color: $footer-button-color-disabled;
-		border-color: $footer-button-background-color-disabled;
+		// background-color: $footer-button-background-color-disabled;
+		// color: $footer-button-color-disabled;
+		// border-color: $footer-button-background-color-disabled;
 	}
 
 	.back.disabled:before {
