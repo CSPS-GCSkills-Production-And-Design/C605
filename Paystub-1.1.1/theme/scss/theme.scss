@@ -38,9 +38,16 @@ footer#wb-info {
 #dynamic_content {
   > header {
     margin-bottom:45px;
-    margin-top:100px; // Needs ajustment later.
+    margin-top:100px;
     padding:0;
     width:100%;
+  }
+}
+
+.wb-tabs.carousel-s1 [role="tablist"] {
+  margin:0 !important;
+  .control {
+    margin-bottom:0 !important;
   }
 }
 
@@ -187,6 +194,9 @@ footer#wb-info {
   }
   h2.series-title {
     padding-left: 15px;
+  }
+  #dynamic_content > header {
+    margin-top:0;
   }
 }
 

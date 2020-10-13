@@ -41,7 +41,7 @@ require(['require-configs'], function() {
 					$.get("content/supermenu/supermenu_"+altLang+".html", function (data) {
 						App.initialize(data);
 					});
-					
+
 				});
 			});
 		});

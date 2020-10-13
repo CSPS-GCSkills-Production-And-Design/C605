@@ -674,6 +674,11 @@ footer#wb-info {
   padding: 0;
   width: 100%; }
 
+.wb-tabs.carousel-s1 [role="tablist"] {
+  margin: 0 !important; }
+  .wb-tabs.carousel-s1 [role="tablist"] .control {
+    margin-bottom: 0 !important; }
+
 .nav-theme-a {
   width: 100%; }
   .nav-theme-a ul {
@@ -786,7 +791,10 @@ footer#wb-info {
     padding-top: 0; }
 
   h2.series-title {
-    padding-left: 15px; } }
+    padding-left: 15px; }
+
+  #dynamic_content > header {
+    margin-top: 0; } }
 /* #dynamic_content {
 
     // ******************************************************

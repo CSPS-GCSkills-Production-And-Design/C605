@@ -14,9 +14,9 @@ define({
   courseLegacyCode: "C605",
   courseTitle_en: "Demystifying Your Pay Stubs",
   courseTitle_fr: "Démystifier vos talons de paye",
-  courseSubtitle_en: "",
+  courseSubtitle_en: "Demystifying Your Pay Stubs",
   courseSubtitle_fr: "Démystifier vos talons de paye",
-  seriesTitle_en: "",
+  seriesTitle_en: "Demystifying Your Pay Stubs",
   seriesTitle_fr: "Démystifier vos talons de paye",
 
   /*------------------ Toolbar -----------------*/
