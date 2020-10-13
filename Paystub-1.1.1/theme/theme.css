@@ -166,7 +166,7 @@ main {
     margin-top: 0px;
     margin-bottom: 25px; }
   #dynamic_content ul {
-    margin: 2em 1em;
+    margin: 0 1em 2em 1em;
     padding: 0;
     height: 100%; }
   #dynamic_content li {
