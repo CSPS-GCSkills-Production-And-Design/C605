@@ -68,17 +68,18 @@ footer#wb-info {
       color:white;
       display:table-cell;
       text-align:center;
+      transition: background-color 155ms ease;
       vertical-align: middle;
-      &:nth-child(1).active a {
+      &:nth-child(1).active a, &:nth-child(1):hover {
         background-color:$lessonA_colorScheme;
       }
-      &:nth-child(2).active a {
+      &:nth-child(2).active a, &:nth-child(2):hover {
         background-color:$lessonB_colorScheme;
       }
-      &:nth-child(3).active a {
+      &:nth-child(3).active a, &:nth-child(3):hover {
         background-color:$lessonC_colorScheme;
       }
-      &:nth-child(4).active a {
+      &:nth-child(4).active a, &:nth-child(4):hover {
         background-color:$lessonD_colorScheme;
       }
     }
@@ -99,37 +100,37 @@ footer#wb-info {
 
 .content-theme-a {
   padding:60px 40px;
+}
+
+$spaceBetweenElements: 40px;
+.content-theme-a.with-icon-spacer {
+
   .content-row {
-    align-items: center;
-    display:flex;
+    display:table;
     margin-bottom:40px;
     &:last-child {
       margin-bottom:0;
     }
-  }
-  .content-row > * {
-    vertical-align:middle;
+    > * {
+      display:table-cell;
+      vertical-align: middle;
+    }
   }
   .icon {
-    max-width:30px;
-    //width: 65px;
-    //position:relative;
+    padding-right:$spaceBetweenElements;
+    width:5%;
     img {
-      //width:100%;
+      width:45px;
     }
   }
   .spacer {
-    margin-left:20px;
-    margin-right:20px;
-    max-width:84px;
+    width:10%;
     position:relative;
     &::before {
       background-color: #707070;
       content:"";
       height: 1px;
       left:0;
-      margin-left:10px;
-      margin-right:10px;
       position:absolute;
       top:50%;
       transform: translateY(-50%);
@@ -146,8 +147,13 @@ footer#wb-info {
       width:1px;
     }
   }
-  p {margin:0 !important;}
+  p {
+    margin:0;
+    padding-left:$spaceBetweenElements;
+  }
 }
+
+
 
 .content-theme-b {
   background-color:#FFF9E8;
@@ -208,6 +214,26 @@ footer#wb-info {
     }
     h2 {
       margin-bottom:40px;
+    }
+  }
+}
+
+@include breakpoint-lte(small) {
+  .content-theme-a.with-icon-spacer {
+    padding:20px 10px;
+    .content-row > * {
+      display:block;
+    }
+    .spacer {
+      display:none;
+    }
+    .icon {
+      margin:0 auto;
+      padding-right:0;
+    }
+    p {
+      margin-top:20px;
+      padding-left:0;
     }
   }
 }
