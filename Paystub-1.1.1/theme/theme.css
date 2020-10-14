@@ -202,6 +202,12 @@ main {
 .w50 {
   width: 50%; }
 
+.w33 {
+  width: 33.33%; }
+
+.w25 {
+  width: 25%; }
+
 .top-buffer {
   margin-top: 35px; }
 
@@ -651,8 +657,6 @@ main {
   .paystub-row.paystub-theme-b .paystub-col {
     background: black;
     color: white; }
-  .paystub-row.paystub-theme-b :first-child {
-    width: 40%; }
 
 .color-theme-a {
   color: #12747B; }
@@ -675,6 +679,8 @@ footer#wb-info {
   width: 100%; }
 #dynamic_content h2 {
   margin-bottom: 70px; }
+#dynamic_content h4 {
+  font-size: 1em; }
 
 .wb-tabs.carousel-s1 [role="tablist"] {
   margin: 0 !important; }
