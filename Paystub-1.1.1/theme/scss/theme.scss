@@ -35,6 +35,14 @@ footer#wb-info {
   }
 }
 
+#wb-bar .top-menu > .row #wb-lng ul.text-right > li > a {
+  color:#918F8F;
+  font-weight:500;
+  &:hover:not(.tb-item), &:active:not(.tb-item) {
+    color:#1CB1C1;
+  }
+}
+
 #dynamic_content {
   > header {
     margin-bottom:90px;

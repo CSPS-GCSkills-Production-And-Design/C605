@@ -132,14 +132,18 @@ header {
 
 	.back, .next
 	{
+		-webkit-user-select: none; /* Safari */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
 		background-color:#40ABAE;
 		border-radius:50%;
-		height:14px;
+		height:32px;
 		overflow:hidden;
 		position:relative;
 		text-indent: 100%;
 		white-space: nowrap;
-		width:14px;
+		width:32px;
 		&.disabled {
 			background-color:#40ABAE !important;
 		}
@@ -147,11 +151,12 @@ header {
 
 	.back {
 		&::before {
-			border-bottom: 3px solid transparent;
-			border-right: 6px solid white;
-			border-top: 3px solid transparent;
+			border-bottom: 5px solid transparent;
+			border-right: 10px solid white;
+			border-top: 5px solid transparent;
 			height: 0;
 			left:50%;
+			margin-right:1px;
 			position:absolute;
 			top:50%;
 			transform: translate(-50%, -50%);
@@ -161,12 +166,13 @@ header {
 
 	.next {
 		//margin-left: 19px;
-		&:after {
-			border-bottom: 3px solid transparent;
-			border-left: 6px solid white;
-			border-top: 3px solid transparent;
+		&::before {
+			border-bottom: 5px solid transparent;
+			border-left: 10px solid white;
+			border-top: 5px solid transparent;
 			height: 0;
 			left:50%;
+			margin-left:1px;
 			position:absolute;
 			top:50%;
 			transform: translate(-50%, -50%);
