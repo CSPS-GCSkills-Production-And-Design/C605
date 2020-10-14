@@ -703,6 +703,11 @@ footer#wb-info {
   .wb-tabs.carousel-s1 [role="tablist"] .control {
     margin-bottom: 0 !important; }
 
+.qs-text legend {
+  color: #444444;
+  font-size: 1em;
+  font-weight: bold; }
+
 .nav-theme-a {
   width: 100%; }
   .nav-theme-a ul {
