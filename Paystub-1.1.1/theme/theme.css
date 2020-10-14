@@ -673,6 +673,8 @@ footer#wb-info {
   margin-top: 100px;
   padding: 0;
   width: 100%; }
+#dynamic_content h2 {
+  margin-bottom: 70px; }
 
 .wb-tabs.carousel-s1 [role="tablist"] {
   margin: 0 !important; }
@@ -795,7 +797,9 @@ footer#wb-info {
 
   #dynamic_content > header {
     margin-bottom: 45px;
-    margin-top: 0; } }
+    margin-top: 0; }
+  #dynamic_content h2 {
+    margin-bottom: 40px; } }
 /* #dynamic_content {
 
     // ******************************************************

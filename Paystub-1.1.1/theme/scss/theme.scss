@@ -42,6 +42,9 @@ footer#wb-info {
     padding:0;
     width:100%;
   }
+  h2 {
+    margin-bottom:70px;
+  }
 }
 
 .wb-tabs.carousel-s1 [role="tablist"] {
@@ -195,9 +198,14 @@ footer#wb-info {
   h2.series-title {
     padding-left: 15px;
   }
-  #dynamic_content > header {
-    margin-bottom:45px;
-    margin-top:0;
+  #dynamic_content {
+    > header {
+      margin-bottom:45px;
+      margin-top:0;
+    }
+    h2 {
+      margin-bottom:40px;
+    }
   }
 }
 
