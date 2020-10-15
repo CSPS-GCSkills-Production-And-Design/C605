@@ -111,6 +111,14 @@ $paystub-nav-button-size: 50px;
 	text-decoration: underline;
 }
 
+table.tablecompare {
+	margin-top:10px;
+	th, td {
+		padding:8px;
+		vertical-align:top;
+	}
+}
+
 // Paystub table
 $themeA_border: 3px solid black;
 
@@ -177,8 +185,10 @@ $themeA_border: 3px solid black;
 //$themeC_tableCellPadd: 8px;
 
 .paystub-table.paystub-theme-c {
-	border:1px solid #ddd;
-
+	border:0;
+	&.border-around {
+		border: 1px solid #ddd;
+	}
 	.paystub-title {
 		background-color: #7fa4c0;
 		border-top-left-radius: 5px;
