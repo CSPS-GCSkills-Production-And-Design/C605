@@ -163,6 +163,18 @@ header #wb-sm {
 #wb-info .next.disabled:after {
   border-right-color: white !important; }
 
+html[data-nav^="m1"] #wb-info .back, html[data-nav^="m1"] #wb-info .next {
+  background-color: #12747B; }
+
+html[data-nav^="m2"] #wb-info .back, html[data-nav^="m2"] #wb-info .next {
+  background-color: #CA6748; }
+
+html[data-nav^="m3"] #wb-info .back, html[data-nav^="m3"] #wb-info .next {
+  background-color: #2B5B69; }
+
+html[data-nav^="m4"] #wb-info .back, html[data-nav^="m4"] #wb-info .next {
+  background-color: #40ABAE; }
+
 main {
   z-index: 0;
   padding-top: calc(45px + 42px); }
@@ -578,8 +590,6 @@ table.tablecompare {
   border: 3px solid black;
   color: black;
   margin-bottom: 60px; }
-  .paystub-table:last-child {
-    margin-bottom: 40px; }
   .paystub-table table {
     background-color: white; }
   .paystub-table table.table-borderless td, .paystub-table table.table-borderless th {
@@ -615,8 +625,6 @@ table.tablecompare {
 
 .paystub-table.paystub-theme-c {
   border: 0; }
-  .paystub-table.paystub-theme-c.border-around {
-    border: 1px solid #ddd; }
   .paystub-table.paystub-theme-c .paystub-title {
     background-color: #7fa4c0;
     border-top-left-radius: 5px;
@@ -625,6 +633,9 @@ table.tablecompare {
     padding: 2px 8px; }
   .paystub-table.paystub-theme-c table {
     margin-bottom: 0; }
+    .paystub-table.paystub-theme-c table.border-around {
+      border: 1px solid #ddd;
+      border-collapse: separate; }
     .paystub-table.paystub-theme-c table thead {
       background-color: #dfe6ee;
       color: #6f8eab; }
@@ -675,6 +686,15 @@ table.tablecompare {
   .paystub-row.paystub-theme-b .paystub-col {
     background: black;
     color: white; }
+
+#dynamic_content[class^="m1"] .paystub-row {
+  border-color: #12747B; }
+
+#dynamic_content[class^="m2"] .paystub-row {
+  border-color: #CA6748; }
+
+#dynamic_content[class^="m3"] .paystub-row {
+  border-color: #2B5B69; }
 
 .color-theme-a {
   color: #12747B; }

@@ -127,9 +127,6 @@ $themeA_border: 3px solid black;
 	border: $themeA_border;
 	color: black;
 	margin-bottom:60px;
-	&:last-child {
-		margin-bottom:40px;
-	}
 	table {
 		background-color: white;
 	}
@@ -186,9 +183,6 @@ $themeA_border: 3px solid black;
 
 .paystub-table.paystub-theme-c {
 	border:0;
-	&.border-around {
-		border: 1px solid #ddd;
-	}
 	.paystub-title {
 		background-color: #7fa4c0;
 		border-top-left-radius: 5px;
@@ -198,6 +192,10 @@ $themeA_border: 3px solid black;
 	}
 	table {
 		margin-bottom: 0;
+		&.border-around {
+			border: 1px solid #ddd;
+			border-collapse: separate;
+		}
 		thead {
 			background-color: #dfe6ee; //#7fa4c0
 			color: #6f8eab;
@@ -216,6 +214,7 @@ $themeA_border: 3px solid black;
 }
 
 //Paystub row
+
 .paystub-row {
 	border: 3px solid #4bacc6;
 	display: table;
@@ -275,5 +274,21 @@ $themeA_border: 3px solid black;
 	}
 	:first-child {
 		//width:40%;
+	}
+}
+
+#dynamic_content[class^="m1"] {
+	.paystub-row {
+		border-color:$lessonA_colorScheme;
+	}
+}
+#dynamic_content[class^="m2"] {
+	.paystub-row {
+		border-color:$lessonB_colorScheme;
+	}
+}
+#dynamic_content[class^="m3"] {
+	.paystub-row {
+		border-color:$lessonC_colorScheme;
 	}
 }

@@ -196,6 +196,35 @@ header {
 	}
 }
 
+html[data-nav^="m1"] {
+	#wb-info {
+		.back, .next {
+			background-color:$lessonA_colorScheme;
+		}
+	}
+}
+html[data-nav^="m2"] {
+	#wb-info {
+		.back, .next {
+			background-color:$lessonB_colorScheme;
+		}
+	}
+}
+html[data-nav^="m3"] {
+	#wb-info {
+		.back, .next {
+			background-color:$lessonC_colorScheme;
+		}
+	}
+}
+html[data-nav^="m4"] {
+	#wb-info {
+		.back, .next {
+			background-color:$lessonD_colorScheme;
+		}
+	}
+}
+
 // **********************************************************
 //
 //	MAIN CONTENT AREA
