@@ -14,6 +14,24 @@
 @import "./_MeD_paystubs"; //styles for information / GoTo / Go Deeper boxes
 
 .color-theme-a {color:$lessonA_colorScheme;}
+.color-theme-b {color:$lessonB_colorScheme;}
+
+abbr[title], abbr[data-original-title] {
+  border: 0;
+  position: relative;
+  text-decoration: none;
+  &::after {
+    bottom: -3px;
+    color: black;
+    content: "..................";
+    font-size: 12px;
+    left: 0px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+  }
+}
 
 main.container {
   margin:0;
@@ -58,6 +76,10 @@ footer#wb-info {
   .control {
     margin-bottom:0 !important;
   }
+}
+
+.qs-question, .qs-feedback {
+  padding:20px;
 }
 
 .qs-text {

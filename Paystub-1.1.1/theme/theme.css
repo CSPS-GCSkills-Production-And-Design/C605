@@ -188,7 +188,7 @@ main {
     margin-top: 0px;
     margin-bottom: 25px; }
   #dynamic_content ul {
-    margin: 0 1em 2em 1em;
+    margin: 1em 2em 1em;
     padding: 0;
     height: 100%; }
   #dynamic_content li {
@@ -699,6 +699,24 @@ table.tablecompare {
 .color-theme-a {
   color: #12747B; }
 
+.color-theme-b {
+  color: #CA6748; }
+
+abbr[title], abbr[data-original-title] {
+  border: 0;
+  position: relative;
+  text-decoration: none; }
+  abbr[title]::after, abbr[data-original-title]::after {
+    bottom: -3px;
+    color: black;
+    content: "..................";
+    font-size: 12px;
+    left: 0px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    position: absolute;
+    right: 0; }
+
 main.container {
   margin: 0;
   padding: 0;
@@ -730,6 +748,9 @@ footer#wb-info {
   margin: 0 !important; }
   .wb-tabs.carousel-s1 [role="tablist"] .control {
     margin-bottom: 0 !important; }
+
+.qs-question, .qs-feedback {
+  padding: 20px; }
 
 .qs-text legend {
   color: #444444;
