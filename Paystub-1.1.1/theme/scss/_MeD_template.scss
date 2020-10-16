@@ -196,6 +196,8 @@ header {
 	}
 }
 
+footer .backnext a.next.disabled:after {display:none;}
+
 html[data-nav^="m1"] {
 	#wb-info {
 		.back, .next {

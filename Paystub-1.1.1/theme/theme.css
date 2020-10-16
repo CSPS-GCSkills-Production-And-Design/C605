@@ -163,6 +163,9 @@ header #wb-sm {
 #wb-info .next.disabled:after {
   border-right-color: white !important; }
 
+footer .backnext a.next.disabled:after {
+  display: none; }
+
 html[data-nav^="m1"] #wb-info .back, html[data-nav^="m1"] #wb-info .next {
   background-color: #12747B; }
 
@@ -901,7 +904,10 @@ footer#wb-info {
       padding-right: 0; }
     .content-theme-a.with-icon-spacer p {
       margin-top: 20px;
-      padding-left: 0; } }
+      padding-left: 0; }
+
+  .content-theme-b::before {
+    display: none; } }
 /* #dynamic_content {
 
     // ******************************************************
