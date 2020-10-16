@@ -71,7 +71,7 @@ footer#wb-info {
     margin-bottom:70px;
   }
   h4 {
-    font-size:1em;
+    font-size:1.1em;
   }
 }
 
@@ -220,7 +220,6 @@ $spaceBetweenElements: 40px;
     margin-bottom:0 !important;
   }
   &.accordion-theme-a {
-
     summary {
       background-color:#40ABAE;
       border:0;
@@ -236,7 +235,6 @@ $spaceBetweenElements: 40px;
     }
   }
 }
-
 
 @include breakpoint-lte(medium) {
   .breadcrumb {

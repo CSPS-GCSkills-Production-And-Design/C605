@@ -215,8 +215,14 @@ main {
 .mb50 {
   margin-bottom: 50px !important; }
 
+.mt40 {
+  margin-top: 40px !important; }
+
 .mt50 {
   margin-top: 50px !important; }
+
+.mt60 {
+  margin-top: 60px !important; }
 
 .mw100 {
   max-width: 100%; }
@@ -231,7 +237,7 @@ main {
   width: 25%; }
 
 .top-buffer {
-  margin-top: 35px; }
+  margin-top: 30px; }
 
 .top-buffer-bigger {
   margin-top: 55px; }
@@ -745,7 +751,7 @@ footer#wb-info {
 #dynamic_content h2 {
   margin-bottom: 70px; }
 #dynamic_content h4 {
-  font-size: 1em; }
+  font-size: 1.1em; }
 
 .wb-tabs.carousel-s1 [role="tablist"] {
   margin: 0 !important; }
