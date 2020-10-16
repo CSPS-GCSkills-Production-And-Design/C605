@@ -16,6 +16,10 @@
 .color-theme-a {color:$lessonA_colorScheme;}
 .color-theme-b {color:$lessonB_colorScheme;}
 
+details::marker {
+  display:none;
+}
+
 abbr[title], abbr[data-original-title] {
   border: 0;
   position: relative;
@@ -23,7 +27,7 @@ abbr[title], abbr[data-original-title] {
   &::after {
     bottom: -3px;
     color: black;
-    content: "..................";
+    content: "...............................................................";
     font-size: 12px;
     left: 0px;
     letter-spacing: 1px;
@@ -210,22 +214,29 @@ $spaceBetweenElements: 40px;
   }
 }
 
-.accordion-theme-a {
-  margin-bottom:40px;
-  summary {
-    background-color:#40ABAE;
-    border:0;
-    border-radius:0;
-    color:white;
-    font-weight:bold;
-    list-style-type:none;
-    &:focus, &:hover {
+.accordion {
+    margin:0 0 40px !important;
+  > li {
+    margin-bottom:0 !important;
+  }
+  &.accordion-theme-a {
+
+    summary {
       background-color:#40ABAE;
+      border:0;
+      border-radius:0;
       color:white;
-      text-decoration: none;
+      font-weight:bold;
+      list-style-type:none;
+      &:focus, &:hover {
+        background-color:#40ABAE;
+        color:white;
+        text-decoration: none;
+      }
     }
   }
 }
+
 
 @include breakpoint-lte(medium) {
   .breadcrumb {

@@ -153,7 +153,7 @@ header {
 	.back {
 		&::before {
 			border-bottom: 5px solid transparent;
-			border-right: 10px solid white;
+			border-right: 10px solid white !important;
 			border-top: 5px solid transparent;
 			height: 0;
 			left:50%;

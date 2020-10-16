@@ -138,7 +138,7 @@ header #wb-sm {
     background-color: #40ABAE !important; }
 #wb-info .back::before {
   border-bottom: 5px solid transparent;
-  border-right: 10px solid white;
+  border-right: 10px solid white !important;
   border-top: 5px solid transparent;
   height: 0;
   left: 50%;
@@ -589,7 +589,7 @@ table.tablecompare {
   background-color: white;
   border: 3px solid black;
   color: black;
-  margin-bottom: 60px; }
+  margin-bottom: 40px; }
   .paystub-table table {
     background-color: white; }
   .paystub-table table.table-borderless td, .paystub-table table.table-borderless th {
@@ -702,6 +702,9 @@ table.tablecompare {
 .color-theme-b {
   color: #CA6748; }
 
+details::marker {
+  display: none; }
+
 abbr[title], abbr[data-original-title] {
   border: 0;
   position: relative;
@@ -709,7 +712,7 @@ abbr[title], abbr[data-original-title] {
   abbr[title]::after, abbr[data-original-title]::after {
     bottom: -3px;
     color: black;
-    content: "..................";
+    content: "...............................................................";
     font-size: 12px;
     left: 0px;
     letter-spacing: 1px;
@@ -848,16 +851,18 @@ footer#wb-info {
   .content-theme-b h3 {
     color: #3A3A3A; }
 
-.accordion-theme-a {
-  margin-bottom: 40px; }
-  .accordion-theme-a summary {
+.accordion {
+  margin: 0 0 40px !important; }
+  .accordion > li {
+    margin-bottom: 0 !important; }
+  .accordion.accordion-theme-a summary {
     background-color: #40ABAE;
     border: 0;
     border-radius: 0;
     color: white;
     font-weight: bold;
     list-style-type: none; }
-    .accordion-theme-a summary:focus, .accordion-theme-a summary:hover {
+    .accordion.accordion-theme-a summary:focus, .accordion.accordion-theme-a summary:hover {
       background-color: #40ABAE;
       color: white;
       text-decoration: none; }
