@@ -24,7 +24,7 @@
 			<p><strong>Vos retenues peuvent inclure :</strong></p>
 			<ul>
 				<li><strong>Cotisations :</strong> Retenue pour les cotisations syndicales; le syndicat auquel les cotisations sont versées est également indiqué.</li>
-				<li><strong><abbr>PSSA</abbr> :</strong> Cotisation au Régime de pension de la fonction publique (aussi appelé LPFP).</li>
+				<li><strong><abbr>LPFP</abbr> :</strong> Cotisation au Régime de pension de la fonction publique (aussi appelé LPFP).</li>
 				<li><strong><abbr>RSSFP</abbr> :</strong> Un montant sera affiché si vous cotisez au niveau II ou au niveau III du Régime de soins de santé de la fonction publique (RSSFP). La prime pour le niveau I du régime est de 0$.</li>
 				<li><strong>Prestation supplémentaire de décès :</strong> La prestation supplémentaire de décès (PSD) est une forme d’assurance-vie décroissante. Si vous cotisez au Régime de pension de retraite de la fonction publique, vous cotiserez également à la PSD (dans la majorité des cas).</li>
 				<li><strong>Assurance-invalidité :</strong> L'assurance invalidité est un régime qui prévoit le remplacement du revenu lorsque vous êtes incapable de travailler pendant de longues périodes en raison d'une maladie ou d'une blessure totalement invalidante. Cette section pourrait plutôt afficher l'invalidité de longue durée si vous êtes éligible au Régime d'assurance des cadres de gestion de la fonction publique (RACGFP).</li>
@@ -33,92 +33,90 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-md-12 top-buffer">
-			<div class="col-md-6">
+	<div class="row top-buffer">
+		<div class="col-md-6">
 
-				<div class="paystub-table paystub-theme-c">
-					<div class="paystub-title"><strong>Revenues avant impôt</strong></div>
-					<table class="table table-striped table-bordered">
-						<caption class="wb-inv">Section Retenues avant impôts d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
-						<thead>
-							<tr>
-								 <th scope="col">Description</th>
-								 <th scope="col">Description</th>
-								 <th scope="col" class="alignRight" id="beforeTax-amount">Montant</th>
-						 </tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Cot. - All fonction pub Can</td>
-								<td>644</td>
-								<td class="alignRight">44,46</td>
-							</tr>
-							<tr>
-								<td>PSSA - Group 2 - Low</td>
-								<td>5G2</td>
-								<td class="alignRight">307,78</td>
-							</tr>
-							<tr>
-								<td>-</td>
-								<td>-</td>
-								<td class="alignRight">-</td>
-							</tr>
-							<tr>
-								<th scope="row" id="beforeTax-total"><strong>Total :</strong></th>
-								<td>-</td>
-								<td class="alignRight" headers="beforeTax-total beforeTax-amount"><strong>352,24</strong></td>
-							</tr>
-						</tbody>
-					</table>
-				</div> <!-- end .paystub-table -->
+			<div class="paystub-table paystub-theme-c">
+				<div class="paystub-title"><strong>Revenues avant impôt</strong></div>
+				<table class="table table-striped table-bordered">
+					<caption class="wb-inv">Section Retenues avant impôts d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
+					<thead>
+						<tr>
+							 <th scope="col">Description</th>
+							 <th scope="col">Description</th>
+							 <th scope="col" class="alignRight" id="beforeTax-amount">Montant</th>
+					 </tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Cot. - All fonction pub Can</td>
+							<td>644</td>
+							<td class="alignRight">44,46</td>
+						</tr>
+						<tr>
+							<td>LPFP - Grp 2 - Bas</td>
+							<td>5G2</td>
+							<td class="alignRight">307,78</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>-</td>
+							<td class="alignRight">-</td>
+						</tr>
+						<tr>
+							<th scope="row" id="beforeTax-total"><strong>Total :</strong></th>
+							<td>-</td>
+							<td class="alignRight" headers="beforeTax-total beforeTax-amount"><strong>352,24</strong></td>
+						</tr>
+					</tbody>
+				</table>
+			</div> <!-- end .paystub-table -->
 
-			</div>
-			<div class="col-md-6">
+		</div>
+		<div class="col-md-6">
 
-				<div class="paystub-table paystub-theme-c">
-					<div class="paystub-title"><strong>Retenues après impôt</strong></div>
-					<table class="table table-striped table-bordered">
-						<caption class="wb-inv">Section Retenues après impôts d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
-						<thead>
-							<tr>
-								 <th scope="col">Description</th>
-								 <th scope="col">Description</th>
-								 <th scope="col" class="alignRight" id="afterTax-amount">Montant</th>
-						 </tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>RSSFP</td>
-								<td>703</td>
-								<td class="alignRight">1,93</td>
-							</tr>
-							<tr>
-								<td>Prestation supp. Décès</td>
-								<td>589</td>
-								<td class="alignRight">11,21</td>
-							</tr>
-							<tr>
-								<td>Assurance-invalidité</td>
-								<td>751</td>
-								<td class="alignRight">10,77</td>
-							</tr>
-							<tr>
-								<th scope="row" id="afterTax-total"><strong>Total :</strong></th>
-								<td>-</td>
-								<td class="alignRight" headers="afterTax-total afterTax-amount"><strong>23,91</strong></td>
-							</tr>
-						</tbody>
-					</table>
-				</div> <!-- end .paystub-table -->
+			<div class="paystub-table paystub-theme-c">
+				<div class="paystub-title"><strong>Retenues après impôt</strong></div>
+				<table class="table table-striped table-bordered">
+					<caption class="wb-inv">Section Retenues après impôts d'un talon de paye dans Phénix contenant des valeurs factices.</caption>
+					<thead>
+						<tr>
+							 <th scope="col">Description</th>
+							 <th scope="col">Description</th>
+							 <th scope="col" class="alignRight" id="afterTax-amount">Montant</th>
+					 </tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>RSSFP</td>
+							<td>703</td>
+							<td class="alignRight">1,93</td>
+						</tr>
+						<tr>
+							<td>Prestation supp. Décès</td>
+							<td>589</td>
+							<td class="alignRight">11,21</td>
+						</tr>
+						<tr>
+							<td>Assurance-invalidité</td>
+							<td>751</td>
+							<td class="alignRight">10,77</td>
+						</tr>
+						<tr>
+							<th scope="row" id="afterTax-total"><strong>Total :</strong></th>
+							<td>-</td>
+							<td class="alignRight" headers="afterTax-total afterTax-amount"><strong>23,91</strong></td>
+						</tr>
+					</tbody>
+				</table>
+			</div> <!-- end .paystub-table -->
 
-			</div>
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row top-buffer">
 		<div class="col-md-12">
-			<h4>Que signifie <abbr>PSSA</abbr> – Group 2 – Low / <abbr>PSSA</abbr> – Group 2 - High?</h4>
+			<h4>Que signifie <abbr>LPFP</abbr> – Grp 2 – Bas / <abbr>LPFP</abbr> – Grp 2 - Élevé?</h4>
 			<p>Votre retenue au titre du Régime de pension de retraite de la fonction publique (LPFP, qui signifie Loi sur la pension de la fonction publique) est calculée à un taux bas ou à un taux élevé.</p>
 		</div>
 	</div>
@@ -131,9 +129,9 @@
 			</div>
 		</div>
 		<div class="col-md-6">
-			<p>Le passage d'un taux bas à un taux élevé survient généralement au même moment où vous aurez versé la cotisation annuelle maximale au RPC ou au RRQ.</p>
+			<p>Le passage d'un taux bas à un taux <strong>élevé</strong> survient généralement au même moment où vous aurez versé la cotisation annuelle maximale au RPC ou au RRQ.</p>
 			<div class="paystub-buffer">
-				<p><strong>Groupe 1</strong> – Le Groupe 1 désigne les participants au régime qui participaient à la LPFP au plus tard le 31 décembre 2012. Si vous appartenez au groupe 1, la ligne affichera simplement « <abbr>PSSA</abbr> – Low » ou « <abbr>PSSA</abbr> – High ».</p>
+				<p><strong>Groupe 1</strong> – Le Groupe 1 désigne les participants au régime qui participaient à la LPFP au plus tard le 31 décembre 2012. Si vous appartenez au groupe 1, la ligne affichera simplement « <abbr>LPFP</abbr> – Bas ou « <abbr>LPFP</abbr> – Élevé.</p>
 			</div>
 		</div>
 	</div>
