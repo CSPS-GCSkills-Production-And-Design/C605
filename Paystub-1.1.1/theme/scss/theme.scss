@@ -197,6 +197,7 @@ $spaceBetweenElements: 40px;
       left:0;
       position:absolute;
       top:50%;
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       width: 100%;
     }
@@ -207,6 +208,7 @@ $spaceBetweenElements: 40px;
       position:absolute;
       right:-1px;
       top: 50%;
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       width:1px;
     }
@@ -264,6 +266,18 @@ $spaceBetweenElements: 40px;
   }
 }
 
+// ie11 fixes
+.ie11 {
+  .content-theme-a.with-icon-spacer {
+    .spacer {
+      &::after, &::before {
+        top: auto;
+      }
+    }
+  }
+}
+
+// Breakpoints
 @include breakpoint-lte(medium) {
   .breadcrumb {
     margin-left:0;
