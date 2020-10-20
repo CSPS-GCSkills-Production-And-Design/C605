@@ -59,11 +59,14 @@ footer#wb-info {
     color:#1CB1C1;
   }
 }
+ul.pnl-btn > li > a > span > span.glyphicon-th-list {
+  color: black;
+}
 
 #dynamic_content {
   > header {
     margin-bottom:90px;
-    margin-top:100px;
+    margin-top:90px;
     padding:0;
     width:100%;
   }
@@ -79,6 +82,30 @@ footer#wb-info {
   margin:0 !important;
   .control {
     margin-bottom:0 !important;
+  }
+}
+
+.fn-lnk {
+  margin-left:0;
+  &::before {
+    // content:"";
+    // display:block;
+    // height:160px; /* fixed header height*/
+    // margin:-160px 0 0; /* negative fixed header height */
+    // visibility: hidden;
+  }
+}
+
+.jumptarget {
+  &::before {
+    content:"";
+    display:block;
+    height:110px; /* fixed header height*/
+    margin:-110px 0 0; /* negative fixed header height */
+  }
+  &:target, &:focus {
+    border:0;
+    outline:0;
   }
 }
 
@@ -191,11 +218,11 @@ $spaceBetweenElements: 40px;
 }
 
 .content-theme-b {
-  background-color:#FFF9E8;
+  background-color:#dfe6ee;
   margin-bottom:40px;
   padding:26px 60px;
   &::before {
-    background: url("../content/medias/images/ico_plus.png") center no-repeat;
+    background: url("../content/medias/images/ico_plusA.png") center no-repeat;
     content:"";
     display:block;
     height:59px;
@@ -209,8 +236,9 @@ $spaceBetweenElements: 40px;
     color:#3A3A3A;
     //margin:0 !important;
   }
-  h3 {
+  h3, h4 {
     color:#3A3A3A;
+    margin-top:18px;
   }
 }
 
@@ -244,7 +272,7 @@ $spaceBetweenElements: 40px;
   main {
     padding-top:0;
   }
-  h2.series-title {
+  .series-title {
     padding-left: 15px;
   }
   #dynamic_content {
