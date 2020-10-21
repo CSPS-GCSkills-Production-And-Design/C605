@@ -183,6 +183,7 @@ $themeA_border: 3px solid black;
 
 .paystub-table.paystub-theme-c {
 	border:0;
+	font-size:0.8em;
 	.paystub-title {
 		background-color: #7fa4c0;
 		border-top-left-radius: 5px;
@@ -208,7 +209,7 @@ $themeA_border: 3px solid black;
 			vertical-align: middle;
 		}
 		tfoot {
-			font-size:0.8em;
+			font-size:0.9em;
 		}
 	}
 }

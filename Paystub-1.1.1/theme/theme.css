@@ -633,7 +633,8 @@ table.tablecompare {
     text-align: right; }
 
 .paystub-table.paystub-theme-c {
-  border: 0; }
+  border: 0;
+  font-size: 0.8em; }
   .paystub-table.paystub-theme-c .paystub-title {
     background-color: #7fa4c0;
     border-top-left-radius: 5px;
@@ -654,7 +655,7 @@ table.tablecompare {
       padding: 8px;
       vertical-align: middle; }
     .paystub-table.paystub-theme-c table tfoot {
-      font-size: 0.8em; }
+      font-size: 0.9em; }
 
 .paystub-row {
   border: 3px solid #4bacc6;
